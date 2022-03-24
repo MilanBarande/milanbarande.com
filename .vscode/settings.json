@@ -9,7 +9,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
   },
-  "[yaml]": {
+  "[js]": {
     "editor.formatOnSave": true
   },
   "[json]": {

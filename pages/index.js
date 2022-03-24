@@ -1,8 +1,16 @@
 import Head from 'next/head';
-// import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import { useState } from 'react';
+import cn from 'classnames';
 
 export default function Home() {
+  const [selectedSection, setSelectedSection] = useState('resume');
+  const [language, setLanguage] = useState('french');
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const isFrench = language === 'french';
+  const isEnglish = language === 'english';
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,24 +24,22 @@ export default function Home() {
           <div className="space-y-5">
             <div className="shadow rounded-xl overflow-hidden">
               <div
-                className="h-32 bg-cover"
-                style={{ backgroundImage: "url('../assets/img/cover.jpg')" }}
-              ></div>
+                className={`h-32 bg-cover ${styles.cover}`}
+              />
               <div className="pt-14 p-7 bg-white relative">
                 <span className="status-badge bg-gray-400">Busy</span>
-                <a href="/">
-                  <img
-                    src="../assets/img/avatar.jpg"
-                    alt="Avatar"
-                    className="user-photo"
-                  />
-                </a>
+                <img
+                  src="/avatar.png"
+                  alt="Avatar"
+                  className="user-photo"
+                />
                 <div className="text-lg font-semibold mb-1.5">
                   Milan Barande
                 </div>
-                <div className="text-sm text-gray-400 mb-7">
+                <div className="text-sm text-gray-400 mb-5">
                   Front-end Developer
                 </div>
+                <span className="text-sm mb-5 block">Add social networks here</span>
                 <div className="flex group">
                   <button className="download-btn">Download CV</button>
                   <button className="download-btn-icon">
@@ -78,7 +84,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-between">
-                  <div className="text-gray-400">Relocation</div>
+                  <div className="text-gray-400">Open to full remote</div>
                   <div className="font-medium text-right text-gray-600">Yes</div>
                 </div>
               </div>
@@ -88,11 +94,14 @@ export default function Home() {
               <h2 className="block-title">Skills</h2>
               <div className="-m-2 flex flex-wrap">
                 <span className="skill-tag">JavaScript</span>
-                <span className="skill-tag">React</span>
-                <span className="skill-tag">Vue</span>
-                <span className="skill-tag">SQL</span>
                 <span className="skill-tag">HTML/CSS</span>
-                <span className="skill-tag">Java</span>
+                <span className="skill-tag">React</span>
+                <span className="skill-tag">React Native</span>
+                <span className="skill-tag">NextJS</span>
+                <span className="skill-tag">TypeScript</span>
+                <span className="skill-tag">GraphQL</span>
+                <span className="skill-tag">Python</span>
+                <span className="skill-tag">NodeJS</span>
               </div>
             </div>
           </div>
@@ -150,14 +159,6 @@ export default function Home() {
                     className="menu-link menu-link-hover"
                   >
                     Products
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/public/blog.html"
-                    className="menu-link menu-link-hover"
-                  >
-                    Blog
                   </a>
                 </li>
               </ul>
@@ -429,17 +430,13 @@ export default function Home() {
               <h2 className="block-title">Education</h2>
               <div className="mb-5 item-section">
                 <div
-                  className="flex-shrink-0 w-12 h-12 rounded-xl bg-cover"
-                  style={{
-                    backgroundImage: "url('../assets/img/bu-logo.jpg')"
-                  }}
-                ></div>
-
+                  className={`flex-shrink-0 w-12 h-12 rounded-xl bg-cover ${styles['udem-logo']}`}
+                />
                 <div className="w-full space-y-5">
                   <div className="item-header items-end">
                     <div className="space-y-1.5">
                       <div className="font-medium">
-                        Master in Software Engineering
+                        Master in Neurosciences
                       </div>
                       <div className="flex space-x-5">
                         <div className="item-header-info">
@@ -459,7 +456,7 @@ export default function Home() {
                               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                             />
                           </svg>
-                          <span>Brunel University</span>
+                          <span>Concordia University</span>
                         </div>
                         <div className="item-header-info">
                           <svg
@@ -482,7 +479,7 @@ export default function Home() {
                               d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                             />
                           </svg>
-                          <span>London</span>
+                          <span>Montréal, Québec</span>
                         </div>
                       </div>
                     </div>
@@ -512,17 +509,14 @@ export default function Home() {
 
               <div className="item-section">
                 <div
-                  className="flex-shrink-0 w-12 h-12 rounded-xl bg-cover"
-                  style={{
-                    backgroundImage: "url('../assets/img/bu-logo.jpg')"
-                  }}
-                ></div>
+                  className={`flex-shrink-0 w-12 h-12 rounded-xl bg-cover ${styles['udem-logo']}`}
+                />
 
                 <div className="w-full space-y-5">
                   <div className="item-header items-end">
                     <div className="space-y-1.5">
                       <div className="font-medium">
-                        Master in Software Engineering
+                        Bachelor in Kinesiology
                       </div>
                       <div className="flex space-x-5">
                         <div className="item-header-info">
@@ -542,7 +536,7 @@ export default function Home() {
                               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                             />
                           </svg>
-                          <span>Brunel University</span>
+                          <span>Université de Montréal</span>
                         </div>
                         <div className="item-header-info">
                           <svg
@@ -565,7 +559,7 @@ export default function Home() {
                               d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                             />
                           </svg>
-                          <span>London</span>
+                          <span>Montréal, Québec</span>
                         </div>
                       </div>
                     </div>
@@ -593,6 +587,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className={`flex justify-between space-x-3 text-2xl ${styles['languages-selector']}`}>
+          <span className={cn('cursor-pointer', {['text-3xl']: isFrench })} onClick={() => setLanguage('french')}>🇫🇷</span>
+          <span className={cn('cursor-pointer', {['text-3xl']: isEnglish })} onClick={() => setLanguage('english')}>🇬🇧</span>
         </div>
       </main>
     </div>
