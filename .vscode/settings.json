@@ -1,0 +1,72 @@
+{
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.rulers": [
+    80
+  ],
+  // Code actions on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "[yaml]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true
+  },
+  // ESLint config
+  "eslint.packageManager": "yarn",
+  "eslint.workingDirectories": [
+    {
+      "directory": "./packages/app-one-catalog",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "./packages/app-one-checkout",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "./packages/app-one-my-account",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "./packages/lib-core"
+    },
+    {
+      "directory": "./packages/lib-user"
+    },
+    {
+      "directory": "./packages/lib-cart"
+    },
+    {
+      "directory": "./packages/lib-cart"
+    },
+    {
+      "directory": "./packages/lib-store"
+    },
+    {
+      "directory": "./packages/lib-wishlist"
+    },
+    {
+      "directory": "./packages/lib-payment"
+    },
+    {
+      "directory": "./packages/lib-footer"
+    },
+    {
+      "directory": "./packages/lib-header"
+    }
+  ],
+  // stylelint config
+  "stylelint.packageManager": "yarn",
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  // Typescript
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
