@@ -7,7 +7,7 @@
 }
 
 .languages-selector {
-  position: absolute;
-  top: 20px;
-  right: 30px;
+  position: fixed;
+  top: 10px;
+  right: 20px;
 }

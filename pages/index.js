@@ -228,37 +228,34 @@ export default function Home() {
 
             <div className="p-7 block-section">
               <h2 className="block-title">{education}</h2>
-
-            <Studies
-              title='Web Development Bootcamp'
-              dates='2017'
-              location='Montréal, Québec'
-              logo='wagon'
-              school='Le Wagon Montréal'
-            />
-
-            <Studies
-              title={mastersNeuroscience}
-              school='Université de Montréal'
-              dates='2016 - 2017'
-              location='Montréal, Québec'
-              logo='udem'
-            />
-            <Studies
-              title="Research Assistant at the PERFORM Center Sleep Lab"
-              logo='concordia'
-              school='Concordia University'
-              location='Montréal, Québec'
-              dates='2016 - 2017'
-            />
-
-            <Studies
-              title={bachelorKinesiology}
-              school='Université de Montréal'
-              dates='2013 - 2016'
-              location='Montréal, Québec'
-              logo='udem'
-            />
+              <Studies
+                title='Web Development Bootcamp'
+                dates='2017'
+                location='Montréal, Québec'
+                logo='wagon'
+                school='Le Wagon Montréal'
+              />
+              <Studies
+                title={mastersNeuroscience}
+                school='Université de Montréal'
+                dates='2016 - 2017'
+                location='Montréal, Québec'
+                logo='udem'
+              />
+              <Studies
+                title="Research Assistant at the PERFORM Center Sleep Lab"
+                logo='concordia'
+                school='Concordia University'
+                location='Montréal, Québec'
+                dates='2016 - 2017'
+              />
+              <Studies
+                title={bachelorKinesiology}
+                school='Université de Montréal'
+                dates='2013 - 2016'
+                location='Montréal, Québec'
+                logo='udem'
+              />
             </div>
           </div>
         </div>
