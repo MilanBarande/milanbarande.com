@@ -1124,7 +1124,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: 0.75rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }

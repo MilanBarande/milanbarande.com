@@ -4,7 +4,7 @@ export default ({ jobTitle, employer, location, dates, status, time, description
   <div className="item-section mb-5">
     <Image
       src={`/${logo}.jpeg`}
-      className='company-logo'
+      className='company-logo rounded-md'
       width={48}
       height={48}
     />

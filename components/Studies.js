@@ -3,8 +3,11 @@ import styles from '../styles/Home.module.css';
 
 export default ({ title, school, dates, location, logo }) => (
   <div className="mb-5 item-section">
-    <div
-      className={`flex-shrink-0 w-12 h-12 rounded-xl bg-cover ${styles['udem-logo']}`}
+    <Image
+      className={'flex-shrink-0 w-12 h-12 rounded-md'}
+      src={`/${logo}.jpeg`}
+      width={48}
+      height={48}
     />
     <div className="w-full space-y-5">
       <div className="item-header items-end">
@@ -58,7 +61,7 @@ export default ({ title, school, dates, location, logo }) => (
           </div>
         </div>
         <div className="space-y-1.5 sm:text-right">
-          <div className="item-header-info">
+          <div className="item-header-info" style={{marginTop: 0}}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
