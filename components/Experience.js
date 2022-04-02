@@ -59,7 +59,7 @@ export default ({ jobTitle, employer, location, dates, status, time, description
         <div className="space-y-2 sm:text-right">
           <div className="job-item-badge mr-2">{status}</div>
           <div className="job-item-badge">{time}</div>
-          <div className="item-header-info">
+          <div className="item-header-info flex justify-end">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"

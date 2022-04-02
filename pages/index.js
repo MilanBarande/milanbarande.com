@@ -259,7 +259,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={`flex justify-between space-x-3 text-2xl ${styles['languages-selector']}`}>
+        <div className='flex justify-between space-x-3 text-2xl fixed top-2.5 right-5'>
           <span className={cn('cursor-pointer', {['text-3xl']: isFrench })} onClick={() => setLanguage('fr')}>🇫🇷</span>
           <span className={cn('cursor-pointer', {['text-3xl']: isEnglish })} onClick={() => setLanguage('en')}>🇬🇧</span>
         </div>
