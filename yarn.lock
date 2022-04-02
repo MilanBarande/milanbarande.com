@@ -2229,6 +2229,11 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+use-mobile-detect-hook@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/use-mobile-detect-hook/-/use-mobile-detect-hook-1.0.5.tgz#1ec83ac112d09e99ee49d60c7175cf3174c1586f"
+  integrity sha512-8Uu69l2DTsPahD+j+ZefzV3IRHWcN2vbQmdlTshTnoHIS8MDvgr2IC3dgaNNpPCUbr8EhKH06c0KB3ViYNSnAQ==
+
 use-subscription@1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/use-subscription/-/use-subscription-1.5.1.tgz#73501107f02fad84c6dd57965beb0b75c68c42d1"

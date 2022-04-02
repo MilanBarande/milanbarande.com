@@ -6,16 +6,19 @@ import wording from '../constants/wording';
 import { Github, Linkedin, Email } from '../components/Icons';
 import Experience from '../components/Experience';
 import Studies from '../components/Studies';
+import useMobileDetect from 'use-mobile-detect-hook';
 
 export default function Home() {
   const [selectedSection, setSelectedSection] = useState('resume');
   const [language, setLanguage] = useState('fr');
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  const { isMobile } = useMobileDetect();
+
   const isFrench = language === 'fr';
   const isEnglish = language === 'en';
 
-  const { jobTitle, status, downloadCV, informations, skills, location, experience, years, availability, availabilityTime, openToFullRemote, yes, aboutMe, aboutMeText, resume, products, experiences, frontendDeveloper, fullTime, timePcd, timeCdcFree, timeCdcCdi, freelance, cdi, descriptionCdcFree, descriptionPcd, descriptionCdcCdi, descriptionWagon, timeWagon, timeBluenove, descriptionBluenove, mastersNeuroscience, bachelorKinesiology, education } = useMemo(() => wording[language],[language])
+  const { jobTitle, status, downloadCV, informations, skills, location, experience, years, availability, availabilityTime, openToFullRemote, yes, aboutMe, aboutMeText, workshopLead, resume, products, experiences, frontendDeveloper, fullTime, timePcd, timeCdcFree, timeCdcCdi, freelance, cdi, descriptionPcd, descriptionCdcCdi, descriptionWagon, timeWagon, timeBluenove, descriptionBluenove, mastersNeuroscience, bachelorKinesiology, education } = useMemo(() => wording[language],[language])
 
   return (
     <div className={styles.container}>
@@ -128,6 +131,10 @@ export default function Home() {
                 <span className="skill-tag">NodeJS</span>
                 <span className="skill-tag">Python</span>
                 <span className="skill-tag">React Native</span>
+                <span className="skill-tag">Tailwind</span>
+                <span className="skill-tag">Ethereum</span>
+                <span className="skill-tag">Web 3</span>
+
                 {/* TODO: ADD LOGO OF EACH TECHNOLOGY? */}
               </div>
             </div>
@@ -136,9 +143,7 @@ export default function Home() {
           <div className="space-y-5 lg:col-span-2">
             <div className="p-7 pb-0 block-section">
               <h2 className="block-title">{aboutMe}</h2>
-              <p className="text-gray-600 mb-5 pb-5">
-                {aboutMeText}
-              </p>
+              <p className="text-gray-600 mb-5 pb-5 text-justify" dangerouslySetInnerHTML={{ __html: aboutMeText }} />
 
               {/* <div className="flex flex-col space-y-4 pb-5">
                 <a href="#0" className="mail-link social-link-hover">
@@ -189,9 +194,11 @@ export default function Home() {
                 dates={timeCdcFree}
                 status={freelance}
                 time={fullTime}
-                description={descriptionCdcFree}
                 logo='cdc'
               />
+
+              <div className="border-b border-gray-200 mb-5 mt-5"></div>
+
 
               <Experience
                 jobTitle={frontendDeveloper}
@@ -204,8 +211,11 @@ export default function Home() {
                 logo='cdc'
               />
 
+              <div className="border-b border-gray-200 mb-5 mt-5"></div>
+
+
               <Experience
-                jobTitle={frontendDeveloper}
+                jobTitle={workshopLead}
                 employer="Le Wagon Paris"
                 location="Paris, France"
                 dates={timeWagon}
@@ -260,8 +270,8 @@ export default function Home() {
           </div>
         </div>
         <div className='flex justify-between space-x-3 text-2xl fixed top-2.5 right-5'>
-          <span className={cn('cursor-pointer text-3xl', {['opacity-100']: isFrench, ['opacity-40']: !isFrench })} onClick={() => setLanguage('fr')}>🇫🇷</span>
-          <span className={cn('cursor-pointer text-3xl', {['opacity-100']: isEnglish, ['opacity-40']: !isEnglish })} onClick={() => setLanguage('en')}>🇬🇧</span>
+          <span className={cn('cursor-pointer', {['opacity-100']: isFrench, ['opacity-40']: !isFrench, ['text-3xl']: isMobile(), ['text-2xl']: !isMobile() })} onClick={() => setLanguage('fr')}>🇫🇷</span>
+          <span className={cn('cursor-pointer', {['opacity-100']: isEnglish, ['opacity-40']: !isEnglish, ['text-3xl']: isMobile(), ['text-2xl']: !isMobile() })} onClick={() => setLanguage('en')}>🇬🇧</span>
         </div>
       </main>
     </div>
