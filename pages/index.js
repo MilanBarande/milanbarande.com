@@ -260,8 +260,8 @@ export default function Home() {
           </div>
         </div>
         <div className='flex justify-between space-x-3 text-2xl fixed top-2.5 right-5'>
-          <span className={cn('cursor-pointer', {['text-3xl']: isFrench })} onClick={() => setLanguage('fr')}>🇫🇷</span>
-          <span className={cn('cursor-pointer', {['text-3xl']: isEnglish })} onClick={() => setLanguage('en')}>🇬🇧</span>
+          <span className={cn('cursor-pointer text-3xl', {['opacity-100']: isFrench, ['opacity-40']: !isFrench })} onClick={() => setLanguage('fr')}>🇫🇷</span>
+          <span className={cn('cursor-pointer text-3xl', {['opacity-100']: isEnglish, ['opacity-40']: !isEnglish })} onClick={() => setLanguage('en')}>🇬🇧</span>
         </div>
       </main>
     </div>
