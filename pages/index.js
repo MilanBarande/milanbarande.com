@@ -136,18 +136,18 @@ export default function Home() {
           <div className="space-y-5 lg:col-span-2">
             <div className="p-7 pb-0 block-section">
               <h2 className="block-title">{aboutMe}</h2>
-              <p className="text-gray-600 mb-5">
+              <p className="text-gray-600 mb-5 pb-5">
                 {aboutMeText}
               </p>
 
-              <div className="flex flex-col space-y-4">
+              {/* <div className="flex flex-col space-y-4 pb-5">
                 <a href="#0" className="mail-link social-link-hover">
                   <i className="bx bx-at text-xl"></i>
                   <span>milan.barande@gmail.com</span>
                 </a>
-              </div>
+              </div> */}
 
-              <div className="border-t border-gray-200 my-5"></div>
+              {/* <div className="border-t border-gray-200 my-5"></div>
 
               <ul className="flex space-x-8 font-medium">
                 <li>
@@ -165,7 +165,7 @@ export default function Home() {
                     {products}
                   </span>
                 </li>
-              </ul>
+              </ul> */}
             </div>
             <div className="p-7 block-section">
               <h2 className="block-title">{experience}</h2>
