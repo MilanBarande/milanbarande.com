@@ -174,7 +174,6 @@ export default function Home() {
             </div>
             <div className="p-7 block-section">
               <h2 className="block-title">{experience}</h2>
-
               <Experience
                 jobTitle={frontendDeveloper}
                 employer="Parfums Christian Dior"
@@ -184,9 +183,7 @@ export default function Home() {
                 time={fullTime}
                 logo='pcd'
               />
-
               <div className="border-b border-gray-200 mb-5 mt-5"></div>
-
               <Experience
                 jobTitle={frontendDeveloper}
                 employer="Christian Dior Couture"
@@ -196,10 +193,7 @@ export default function Home() {
                 time={fullTime}
                 logo='cdc'
               />
-
               <div className="border-b border-gray-200 mb-5 mt-5"></div>
-
-
               <Experience
                 jobTitle={frontendDeveloper}
                 employer="Christian Dior Couture"
@@ -210,10 +204,7 @@ export default function Home() {
                 description={descriptionCdcCdi}
                 logo='cdc'
               />
-
               <div className="border-b border-gray-200 mb-5 mt-5"></div>
-
-
               <Experience
                 jobTitle={workshopLead}
                 employer="Le Wagon Paris"
@@ -223,7 +214,6 @@ export default function Home() {
                 description={descriptionWagon}
                 logo='wagon'
               />
-
               <Experience
                 jobTitle={frontendDeveloper}
                 employer="Bluenove"
@@ -246,18 +236,18 @@ export default function Home() {
                 school='Le Wagon Montréal'
               />
               <Studies
-                title={mastersNeuroscience}
-                school='Université de Montréal'
-                dates='2016 - 2017'
-                location='Montréal, Québec'
-                logo='udem'
-              />
-              <Studies
                 title="Research Assistant at the PERFORM Center Sleep Lab"
                 logo='concordia'
                 school='Concordia University'
                 location='Montréal, Québec'
                 dates='2016 - 2017'
+              />
+              <Studies
+                title={mastersNeuroscience}
+                school='Université de Montréal'
+                dates='2016 - 2017'
+                location='Montréal, Québec'
+                logo='udem'
               />
               <Studies
                 title={bachelorKinesiology}

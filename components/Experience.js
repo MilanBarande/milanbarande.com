@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default ({ jobTitle, employer, location, dates, status, time, description, logo }) => (
+export default ({ jobTitle, employer, location, dates, status, time, description, logo, }) => (
   <div className="item-section mb-5">
     <Image
       src={`/${logo}.jpeg`}
