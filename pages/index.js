@@ -1,24 +1,24 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, Fragment } from 'react';
 import cn from 'classnames';
 import wording from '../constants/wording';
 import { Github, Linkedin, Email } from '../components/Icons';
 import Experience from '../components/Experience';
 import Studies from '../components/Studies';
 import useMobileDetect from 'use-mobile-detect-hook';
+import { experiencesData, skillsData, studiesData } from '../constants/data';
 
 export default function Home() {
   const [selectedSection, setSelectedSection] = useState('resume');
   const [language, setLanguage] = useState('fr');
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const { isMobile } = useMobileDetect();
 
   const isFrench = language === 'fr';
   const isEnglish = language === 'en';
 
-  const { jobTitle, status, downloadCV, informations, skills, location, experience, years, availability, availabilityTime, openToFullRemote, yes, aboutMe, aboutMeText, workshopLead, resume, products, experiences, frontendDeveloper, fullTime, timePcd, timeCdcFree, timeCdcCdi, freelance, cdi, descriptionPcd, descriptionCdcCdi, descriptionWagon, timeWagon, timeBluenove, descriptionBluenove, mastersNeuroscience, bachelorKinesiology, education } = useMemo(() => wording[language],[language])
+  const { jobTitle, status, downloadCV, informations, skills, location, experience, years, availability, availabilityTime, openToFullRemote, yes, aboutMe, aboutMeText, openToPartTime, education } = useMemo(() => wording[language],[language])
 
   return (
     <div className={styles.container}>
@@ -48,7 +48,7 @@ export default function Home() {
                 <div className="text-sm text-gray-400 mb-5">
                   {jobTitle}
                 </div>
-                <ul className="flex space-x-5 mb-5">
+                <ul className="flex space-x-5">
                   <li>
                     <a href="https://github.com/MilanBarande" className="social-link-hover" target='_blank'>
                       <Github height={20} width={20} />
@@ -65,7 +65,7 @@ export default function Home() {
                     </a>
                   </li>
                 </ul>
-                <div className="flex group">
+                {/* <div className="flex group">
                   <button className="download-btn">{downloadCV}</button>
                   <button className="download-btn-icon">
                     <svg
@@ -83,7 +83,7 @@ export default function Home() {
                       />
                     </svg>
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -113,7 +113,7 @@ export default function Home() {
                   <div className="font-medium text-right text-gray-600">{yes}</div>
                 </div>
                 <div className="flex justify-between">
-                  <div className="text-gray-400">Ouvert au temps partiel</div>
+                  <div className="text-gray-400">{openToPartTime}</div>
                   <div className="font-medium text-right text-gray-600">{yes}</div>
                 </div>
               </div>
@@ -122,20 +122,9 @@ export default function Home() {
             <div className="p-7 block-section flow-root">
               <h2 className="block-title">{skills}</h2>
               <div className="-m-2 flex flex-wrap">
-                <span className="skill-tag">JavaScript</span>
-                <span className="skill-tag">HTML/CSS</span>
-                <span className="skill-tag">React</span>
-                <span className="skill-tag">NextJS</span>
-                <span className="skill-tag">TypeScript</span>
-                <span className="skill-tag">GraphQL</span>
-                <span className="skill-tag">NodeJS</span>
-                <span className="skill-tag">Python</span>
-                <span className="skill-tag">React Native</span>
-                <span className="skill-tag">Tailwind</span>
-                <span className="skill-tag">Ethereum</span>
-                <span className="skill-tag">Web 3</span>
-
-                {/* TODO: ADD LOGO OF EACH TECHNOLOGY? */}
+                {
+                  skillsData.map((skill) => <span className='skill-tag' key={skill}>{skill}</span>)
+                }
               </div>
             </div>
           </div>
@@ -144,13 +133,6 @@ export default function Home() {
             <div className="p-7 pb-0 block-section">
               <h2 className="block-title">{aboutMe}</h2>
               <p className="text-gray-600 mb-5 pb-5 text-justify" dangerouslySetInnerHTML={{ __html: aboutMeText }} />
-
-              {/* <div className="flex flex-col space-y-4 pb-5">
-                <a href="#0" className="mail-link social-link-hover">
-                  <i className="bx bx-at text-xl"></i>
-                  <span>milan.barande@gmail.com</span>
-                </a>
-              </div> */}
 
               {/* <div className="border-t border-gray-200 my-5"></div>
 
@@ -174,88 +156,40 @@ export default function Home() {
             </div>
             <div className="p-7 block-section">
               <h2 className="block-title">{experience}</h2>
-              <Experience
-                jobTitle={frontendDeveloper}
-                employer="Parfums Christian Dior"
-                location="Paris, France"
-                dates={timePcd}
-                status={freelance}
-                time={fullTime}
-                logo='pcd'
-              />
-              <div className="border-b border-gray-200 mb-5 mt-5"></div>
-              <Experience
-                jobTitle={frontendDeveloper}
-                employer="Christian Dior Couture"
-                location="Paris, France"
-                dates={timeCdcFree}
-                status={freelance}
-                time={fullTime}
-                logo='cdc'
-              />
-              <div className="border-b border-gray-200 mb-5 mt-5"></div>
-              <Experience
-                jobTitle={frontendDeveloper}
-                employer="Christian Dior Couture"
-                location="Paris, France"
-                dates={timeCdcCdi}
-                status={cdi}
-                time={fullTime}
-                description={descriptionCdcCdi}
-                logo='cdc'
-              />
-              <div className="border-b border-gray-200 mb-5 mt-5"></div>
-              <Experience
-                jobTitle={workshopLead}
-                employer="Le Wagon Paris"
-                location="Paris, France"
-                dates={timeWagon}
-                status={freelance}
-                description={descriptionWagon}
-                logo='wagon'
-              />
-              <Experience
-                jobTitle={frontendDeveloper}
-                employer="Bluenove"
-                location="Paris, France"
-                dates={timeBluenove}
-                status={cdi}
-                time={fullTime}
-                description={descriptionBluenove}
-                logo='bluenove'
-              />
+              {
+                experiencesData.map(({ jobTitle, employer, location, description, dates, status, time, logo, withSeparator }) => console.log('wording[time]', wording[time]) || (
+                  <Fragment key={wording[language][jobTitle]}>
+                    <Experience
+                      jobTitle={wording[language][jobTitle]}
+                      employer={employer}
+                      location={location}
+                      dates={wording[language][dates]}
+                      time={wording[language][time]}
+                      status={wording[language][status]}
+                      description={wording[language][description]}
+                      logo={logo}
+                    />
+                    {withSeparator && <div className="border-b border-gray-200 mb-5 mt-5"/>}
+                  </Fragment>
+                  )
+                )
+              }
             </div>
 
             <div className="p-7 block-section">
               <h2 className="block-title">{education}</h2>
-              <Studies
-                title='Web Development Bootcamp'
-                dates='2017'
-                location='Montréal, Québec'
-                logo='wagon'
-                school='Le Wagon Montréal'
-              />
-              <Studies
-                title="Research Assistant at the PERFORM Center Sleep Lab"
-                logo='concordia'
-                school='Concordia University'
-                location='Montréal, Québec'
-                dates='2016 - 2017'
-              />
-              <Studies
-                title={mastersNeuroscience}
-                school='Université de Montréal'
-                dates='2016 - 2017'
-                location='Montréal, Québec'
-                logo='udem'
-              />
-              <Studies
-                title={bachelorKinesiology}
-                school='Université de Montréal'
-                dates='2013 - 2016'
-                location='Montréal, Québec'
-                logo='udem'
-              />
+              {
+                studiesData.map(({ title, dates, location, logo, school }) => (
+                  <Studies
+                    title={wording[language][title]}
+                    dates={dates}
+                    location={location}
+                    logo={logo}
+                    school={school}
+                    key={wording[language][title]}
+                  />
+                ))
+              }
             </div>
           </div>
         </div>

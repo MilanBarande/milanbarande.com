@@ -34,6 +34,9 @@ export default {
     bachelorKinesiology: "Licence en Kinésiologie",
     mastersNeuroscience: "Master en Neurosciences",
     education: "Etudes",
+    openToPartTime: "Ouvert au temps partiel",
+    webDevBootcamp: 'Bootcamp en développement web',
+    researchAssistant: 'Assistant de recherche au PERFORM Center Sleep Lab'
   },
   "en": {
     jobTitle: "Front-end developer",
@@ -70,5 +73,8 @@ export default {
     bachelorKinesiology: 'BSc in Kinesiology',
     mastersNeuroscience: "Master's in Neuroscience",
     education: "Education",
+    openToPartTime: "Open to part time",
+    webDevBootcamp: 'Web Development Bootcamp',
+    researchAssistant: 'Research Assistant at the PERFORM Center Sleep Lab'
   }
 }
