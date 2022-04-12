@@ -38,7 +38,7 @@ export default function Home() {
               <div className="pt-14 p-7 bg-white relative">
                 <span className="status-badge bg-gray-400">{status}</span>
                 <img
-                  src="/avatar.png"
+                  src="/avatar.jpeg"
                   alt="Avatar"
                   className="user-photo"
                 />
