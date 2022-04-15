@@ -36,7 +36,12 @@ export default {
     education: "Etudes",
     openToPartTime: "Ouvert au temps partiel",
     webDevBootcamp: 'Bootcamp en développement web',
-    researchAssistant: 'Assistant de recherche au PERFORM Center Sleep Lab'
+    researchAssistant: 'Assistant de recherche au PERFORM Center Sleep Lab',
+    languages: 'Langues',
+    french: 'Français',
+    english: 'Anglais',
+    german: 'Allemand',
+    portuguese: 'Portugais',
   },
   "en": {
     jobTitle: "Front-end developer",
@@ -75,6 +80,11 @@ export default {
     education: "Education",
     openToPartTime: "Open to part time",
     webDevBootcamp: 'Web Development Bootcamp',
-    researchAssistant: 'Research Assistant at the PERFORM Center Sleep Lab'
+    researchAssistant: 'Research Assistant at the PERFORM Center Sleep Lab',
+    languages: 'Languages',
+    french: 'Français',
+    english: 'English',
+    german: 'German',
+    portuguese: 'Portuguese',
   }
 }

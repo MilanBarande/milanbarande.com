@@ -7,7 +7,7 @@ import { Github, Linkedin, Email } from '../components/Icons';
 import Experience from '../components/Experience';
 import Studies from '../components/Studies';
 import useMobileDetect from 'use-mobile-detect-hook';
-import { experiencesData, skillsData, studiesData } from '../constants/data';
+import { experiencesData, skillsData, studiesData, languagesData } from '../constants/data';
 
 export default function Home() {
   const [selectedSection, setSelectedSection] = useState('resume');
@@ -18,7 +18,7 @@ export default function Home() {
   const isFrench = language === 'fr';
   const isEnglish = language === 'en';
 
-  const { jobTitle, status, downloadCV, informations, skills, location, experience, years, availability, availabilityTime, openToFullRemote, yes, aboutMe, aboutMeText, openToPartTime, education } = useMemo(() => wording[language],[language])
+  const { jobTitle, status, downloadCV, informations, skills, location, experience, years, availability, availabilityTime, openToFullRemote, yes, aboutMe, aboutMeText, openToPartTime, education, languages } = useMemo(() => wording[language],[language])
 
   return (
     <div className={styles.container}>
@@ -125,6 +125,13 @@ export default function Home() {
                 {
                   skillsData.map((skill) => <span className='skill-tag' key={skill}>{skill}</span>)
                 }
+              </div>
+            </div>
+
+            <div className="p-7 block-section flow-root">
+              <h2 className="block-title">{languages}</h2>
+              <div className="-m-2 flex flex-wrap">
+                {languagesData.map((l) => <span className='skill-tag' key={wording[language][l]}>{wording[language][l]}</span>)}
               </div>
             </div>
           </div>

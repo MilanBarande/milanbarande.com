@@ -87,3 +87,5 @@ export const studiesData = [
 export const skillsData = [
   'JavaScript', 'HTML/CSS', 'React', 'NextJS', 'TypeScript', 'GraphQL', 'NodeJS', 'Python', 'React Native', 'Tailwind', 'Ethereum', 'Web 3'
 ]
+
+export const languagesData = ['french', 'english', 'german', 'portuguese'];
