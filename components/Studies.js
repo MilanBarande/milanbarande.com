@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-export default ({ title, school, dates, location, logo }) => (
+export default ({ title, school, dates, location, logo, isLast }) => (
   <div className="mb-5 item-section">
     <Image
       className={'flex-shrink-0 w-12 h-12 rounded-md'}
@@ -80,7 +80,7 @@ export default ({ title, school, dates, location, logo }) => (
           </div>
         </div>
       </div>
-      <div className="border-b border-gray-200"></div>
+      {!isLast && <div className="border-b border-gray-200"/>}
     </div>
   </div>
 )

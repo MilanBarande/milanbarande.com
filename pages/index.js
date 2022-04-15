@@ -25,7 +25,7 @@ export default function Home() {
       <Head>
         <title>Milan Barande</title>
         <meta name="description" content="Personal website of Milan Barande" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className="main-container">
@@ -186,7 +186,7 @@ export default function Home() {
             <div className="p-7 block-section">
               <h2 className="block-title">{education}</h2>
               {
-                studiesData.map(({ title, dates, location, logo, school }) => (
+                studiesData.map(({ title, dates, location, logo, school }, index) => (
                   <Studies
                     title={wording[language][title]}
                     dates={dates}
@@ -194,6 +194,7 @@ export default function Home() {
                     logo={logo}
                     school={school}
                     key={wording[language][title]}
+                    isLast={index + 1 === studiesData.length}
                   />
                 ))
               }
