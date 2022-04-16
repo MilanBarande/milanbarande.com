@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { useState, useMemo, Fragment } from 'react';
+import { useState, useMemo, Fragment, useCallback } from 'react';
 import cn from 'classnames';
 import wording from '../constants/wording';
 import { Github, Linkedin, Email } from '../components/Icons';
@@ -10,7 +10,7 @@ import useMobileDetect from 'use-mobile-detect-hook';
 import { experiencesData, skillsData, studiesData, languagesData } from '../constants/data';
 
 export default function Home() {
-  const [selectedSection, setSelectedSection] = useState('resume');
+  // const [selectedSection, setSelectedSection] = useState('resume');
   const [language, setLanguage] = useState('fr');
 
   const { isMobile } = useMobileDetect();
@@ -18,7 +18,9 @@ export default function Home() {
   const isFrench = language === 'fr';
   const isEnglish = language === 'en';
 
-  const { jobTitle, status, downloadCV, informations, skills, location, experience, years, availability, availabilityTime, openToFullRemote, yes, aboutMe, aboutMeText, openToPartTime, education, languages } = useMemo(() => wording[language],[language])
+  const getWording = useCallback((wordingKey) => wording[language][wordingKey], [language]);
+
+  const { jobTitle, status, informations, skills, location, experience, years, availability, availabilityTime, openToFullRemote, yes, aboutMe, aboutMeText, openToPartTime, education, languages } = useMemo(() => wording[language], [language])
 
   return (
     <div className={styles.container}>
@@ -131,7 +133,7 @@ export default function Home() {
             <div className="p-7 block-section flow-root">
               <h2 className="block-title">{languages}</h2>
               <div className="-m-2 flex flex-wrap">
-                {languagesData.map((l) => <span className='skill-tag' key={wording[language][l]}>{wording[language][l]}</span>)}
+                {languagesData.map((l) => <span className='skill-tag' key={getWording(l)}>{getWording(l)}</span>)}
               </div>
             </div>
           </div>
@@ -142,7 +144,6 @@ export default function Home() {
               <p className="text-gray-600 mb-5 pb-5 text-justify" dangerouslySetInnerHTML={{ __html: aboutMeText }} />
 
               {/* <div className="border-t border-gray-200 my-5"></div>
-
               <ul className="flex space-x-8 font-medium">
                 <li>
                   <span
@@ -154,7 +155,6 @@ export default function Home() {
                 <li>
                   <span
                     className="menu-link menu-link-hover cursor-pointer"
-                    // manage 'currently open state'
                   >
                     {products}
                   </span>
@@ -164,16 +164,16 @@ export default function Home() {
             <div className="p-7 block-section">
               <h2 className="block-title">{experience}</h2>
               {
-                experiencesData.map(({ jobTitle, employer, location, description, dates, status, time, logo, withSeparator }, index) => console.log('wording[language][jobTitle]', wording[language][jobTitle]) || (
-                  <Fragment key={`${wording[language][jobTitle]}-${index}`}>
+                experiencesData.map(({ jobTitle, employer, location, description, dates, status, time, logo, withSeparator }) => (
+                  <Fragment key={`${getWording(jobTitle)}-${employer}`}>
                     <Experience
-                      jobTitle={wording[language][jobTitle]}
+                      jobTitle={getWording(jobTitle)}
                       employer={employer}
                       location={location}
-                      dates={wording[language][dates]}
-                      time={wording[language][time]}
-                      status={wording[language][status]}
-                      description={wording[language][description]}
+                      dates={getWording(dates)}
+                      time={getWording(time)}
+                      status={getWording(status)}
+                      description={getWording(description)}
                       logo={logo}
                     />
                     {withSeparator && <div className="border-b border-gray-200 mb-5 mt-5"/>}
@@ -188,12 +188,12 @@ export default function Home() {
               {
                 studiesData.map(({ title, dates, location, logo, school }, index) => (
                   <Studies
-                    title={wording[language][title]}
+                    title={getWording(title)}
                     dates={dates}
                     location={location}
                     logo={logo}
                     school={school}
-                    key={wording[language][title]}
+                    key={getWording(title)}
                     isLast={index + 1 === studiesData.length}
                   />
                 ))
