@@ -82,7 +82,7 @@ export default {
     webDevBootcamp: 'Web Development Bootcamp',
     researchAssistant: 'Research Assistant at the PERFORM Center Sleep Lab',
     languages: 'Languages',
-    french: 'Français',
+    french: 'French',
     english: 'English',
     german: 'German',
     portuguese: 'Portuguese',
