@@ -12,9 +12,7 @@ export default ({ title, school, dates, location, logo, isLast }) => (
     <div className="w-full space-y-5">
       <div className="item-header items-end">
         <div className="space-y-1.5">
-          <div className="font-medium">
-            {title}
-          </div>
+          <div className="font-medium">{title}</div>
           <div className="flex space-x-5">
             <div className="item-header-info">
               <svg
@@ -61,7 +59,7 @@ export default ({ title, school, dates, location, logo, isLast }) => (
           </div>
         </div>
         <div className="space-y-1.5 sm:text-right">
-          <div className="item-header-info" style={{marginTop: 0}}>
+          <div className="item-header-info" style={{ marginTop: 0 }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
@@ -80,7 +78,7 @@ export default ({ title, school, dates, location, logo, isLast }) => (
           </div>
         </div>
       </div>
-      {!isLast && <div className="border-b border-gray-200"/>}
+      {!isLast && <div className="border-b border-gray-200" />}
     </div>
   </div>
-)
+);

@@ -1,10 +1,19 @@
 import Image from 'next/image';
 
-export default ({ jobTitle, employer, location, dates, status, time, description, logo, }) => (
+const Experience = ({
+  jobTitle,
+  employer,
+  location,
+  dates,
+  status,
+  time,
+  description,
+  logo
+}) => (
   <div className="item-section mb-5">
     <Image
       src={`/${logo}.jpeg`}
-      className='company-logo rounded-md'
+      className="company-logo rounded-md"
       width={48}
       height={48}
     />
@@ -80,7 +89,14 @@ export default ({ jobTitle, employer, location, dates, status, time, description
           </div>
         </div>
       </div>
-     {description && <p className="text-gray-600 text-justify" dangerouslySetInnerHTML={{__html: description }} />}
+      {description && (
+        <p
+          className="text-gray-600 text-justify"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+      )}
     </div>
   </div>
-)
+);
+
+export default Experience;
