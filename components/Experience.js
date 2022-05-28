@@ -61,7 +61,7 @@ export default ({ jobTitle, employer, location, dates, status, time, description
             <div className="job-item-badge mr-2">{status}</div>
             {time && <div className="job-item-badge">{time}</div>}
           </div>
-          <div className="item-header-info flex justify-end">
+          <div className="item-header-info flex justify-start sm:justify-end">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
