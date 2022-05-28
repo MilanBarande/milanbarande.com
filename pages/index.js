@@ -164,8 +164,8 @@ export default function Home() {
             <div className="p-7 block-section">
               <h2 className="block-title">{experience}</h2>
               {
-                experiencesData.map(({ jobTitle, employer, location, description, dates, status, time, logo, withSeparator }) => (
-                  <Fragment key={`${getWording(jobTitle)}-${employer}`}>
+                experiencesData.map(({ jobTitle, employer, location, description, dates, status, time, logo, withSeparator }, index) => (
+                  <Fragment key={`${jobTitle}-${index}`}>
                     <Experience
                       jobTitle={getWording(jobTitle)}
                       employer={employer}
