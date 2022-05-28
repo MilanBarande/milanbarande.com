@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { useState, useMemo, Fragment, useCallback } from 'react';
+import { useState, useMemo, Fragment, useCallback, useEffect } from 'react';
 import cn from 'classnames';
 import wording from '../constants/wording';
 import { Github, Linkedin, Email } from '../components/Icons';
@@ -12,6 +12,15 @@ import { experiencesData, skillsData, studiesData, languagesData } from '../cons
 export default function Home() {
   // const [selectedSection, setSelectedSection] = useState('resume');
   const [language, setLanguage] = useState('fr');
+
+  useEffect(function getBrowserLanguage() {
+    const browserLanguage = window.navigator.language.split('-')[0];
+    if (browserLanguage === 'fr') {
+      return setLanguage('fr')
+    }
+    // fallback to english for any other browser language
+    setLanguage('en')
+  }, [])
 
   const { isMobile } = useMobileDetect();
 
