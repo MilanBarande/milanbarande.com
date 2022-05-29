@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 
-export default ({ title, school, dates, location, logo, isLast }) => (
+const Studies = ({ title, school, dates, location, logo, isLast }) => (
   <div className="mb-5 item-section">
     <Image
       className={'flex-shrink-0 w-12 h-12 rounded-md'}
@@ -82,3 +81,5 @@ export default ({ title, school, dates, location, logo, isLast }) => (
     </div>
   </div>
 );
+
+export default Studies;
