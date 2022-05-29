@@ -14,7 +14,7 @@ export default {
     yes: 'Oui',
     aboutMe: 'À propos de moi',
     aboutMeText:
-      "Développeur front-end freelance avec plus de 4 ans d'expérience, sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je recherche actuellement une mission front-end (ou mobile) à Paris et/ou en télétravail, de préférence dans une petite structure. Je suis ouvert au temps partiel. Je recherche uniquement des missions en JS/TS.",
+      "Développeur front-end freelance avec plus de 4 ans d'expérience, sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je recherche actuellement une mission front-end (ou mobile) à Paris et/ou en télétravail, de préférence dans une petite structure.<br> Je suis ouvert au temps partiel.",
     resume: 'CV',
     portfolio: 'Portfolio',
     experiences: 'Expériences',
@@ -63,7 +63,7 @@ export default {
     yes: 'Yes',
     aboutMe: 'About me',
     aboutMeText:
-      "I am a front-end developer with over 4 years of experience. I care about UX, performances, code quality and accessibility. I enjoy teamwork and training junior developers. <br>I'm currently looking for a front-end (or mobile) mission in Paris and/or remotely. I am open to part-time work.<br> I am only looking for missions in JS/TS.",
+      "I am a front-end developer with over 4 years of experience. I care about UX, performances, code quality and accessibility. I enjoy teamwork and training junior developers. <br>I'm currently looking for a front-end (or mobile) mission in Paris and/or remotely.<br>I am open to part-time work.",
     resume: 'CV',
     portfolio: 'Portfolio',
     experiences: 'Experiences',
