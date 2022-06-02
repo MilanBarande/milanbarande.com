@@ -1,8 +1,10 @@
+const paris = 'Paris, France';
+
 export const experiencesData = [
   {
     jobTitle: 'frontendDeveloper',
     employer: 'Parfums Christian Dior',
-    location: 'Paris, France',
+    location: paris,
     dates: 'timePcd',
     status: 'freelance',
     time: 'fullTime',
@@ -12,7 +14,7 @@ export const experiencesData = [
   {
     jobTitle: 'frontendDeveloper',
     employer: 'Christian Dior Couture',
-    location: 'Paris, France',
+    location: paris,
     dates: 'timeCdcFree',
     status: 'freelance',
     time: 'fullTime',
@@ -22,7 +24,7 @@ export const experiencesData = [
   {
     jobTitle: 'frontendDeveloper',
     employer: 'Christian Dior Couture',
-    location: 'Paris, France',
+    location: paris,
     dates: 'timeCdcCdi',
     status: 'cdi',
     time: 'fullTime',
@@ -33,7 +35,7 @@ export const experiencesData = [
   {
     jobTitle: 'workshopLead',
     employer: 'Le Wagon Paris',
-    location: 'Paris, France',
+    location: paris,
     dates: 'timeWagon',
     status: 'freelance',
     description: 'descriptionWagon',
@@ -43,15 +45,15 @@ export const experiencesData = [
   {
     jobTitle: 'frontendDeveloper',
     employer: 'Bluenove',
-    location: 'Paris, France',
+    location: paris,
     dates: 'timeBluenove',
     status: 'cdi',
     time: 'fullTime',
     description: 'descriptionBluenove',
     logo: 'bluenove',
     withSeparator: false
-  },
-]
+  }
+];
 
 export const studiesData = [
   {
@@ -81,11 +83,22 @@ export const studiesData = [
     location: 'Montréal, Québec',
     logo: 'udem',
     school: 'Université de Montréal'
-  },
-]
+  }
+];
 
 export const skillsData = [
-  'JavaScript', 'HTML/CSS', 'React', 'NextJS', 'TypeScript', 'GraphQL', 'NodeJS', 'Python', 'React Native', 'Tailwind'
-]
+  'JavaScript',
+  'HTML/CSS',
+  'React',
+  'NextJS',
+  'TypeScript',
+  'GraphQL',
+  'NodeJS',
+  'ExpressJS',
+  'Python',
+  'React Native',
+  'Tailwind CSS',
+  'Jest'
+];
 
 export const languagesData = ['french', 'english', 'german', 'portuguese'];
