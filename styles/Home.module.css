@@ -1,9 +1,9 @@
 .cover {
-  background-image: url("../assets/img/cover.jpg");
+  background-image: url("/cover.jpg");
 }
 
 .udem-logo {
-  background-image: url('../assets/img/bu-logo.jpg');
+  background-image: url('/bu-logo.jpg');
 }
 
 .languages-selector {
