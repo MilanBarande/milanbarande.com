@@ -190,9 +190,9 @@ export default function Home() {
             <div className="p-7 block-section flow-root">
               <h2 className="block-title">{languages}</h2>
               <div className="-m-2 flex flex-wrap">
-                {languagesData.map(l => (
-                  <span className="skill-tag" key={getWording(l)}>
-                    {getWording(l)}
+                {languagesData.map(language => (
+                  <span className="skill-tag" key={getWording(language)}>
+                    {getWording(language)}
                   </span>
                 ))}
               </div>
@@ -203,7 +203,7 @@ export default function Home() {
             <div className="p-7 pb-0 block-section">
               <h2 className="block-title">{aboutMe}</h2>
               <p
-                className="text-gray-600 mb-5 pb-5 text-justify"
+                className="text-gray-600 mb-5 text-justify"
                 dangerouslySetInnerHTML={{ __html: aboutMeText }}
               />
 
@@ -245,8 +245,7 @@ export default function Home() {
                         dates,
                         status,
                         time,
-                        logo,
-                        withSeparator
+                        logo
                       },
                       index
                     ) => (
@@ -261,7 +260,7 @@ export default function Home() {
                           description={getWording(description)}
                           logo={logo}
                         />
-                        {withSeparator && (
+                        {index + 1 < experiencesData.length && (
                           <div className="border-b border-gray-200 mb-5 mt-5" />
                         )}
                       </Fragment>
