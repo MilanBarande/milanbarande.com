@@ -1,5 +1,5 @@
 export default {
-  fr: {
+  FR: {
     jobTitle: 'Développeur front-end',
     status: 'En mission',
     downloadCV: 'Télécharger CV',
@@ -54,7 +54,7 @@ export default {
       "Conception d'un parcours de personalisation de flacon de parfum animé avec mémoire des derniers choix effectués, ajout au panier du produit personalisé et possibilité d'édition",
     techStack: 'Stack technique'
   },
-  en: {
+  EN: {
     jobTitle: 'Front-end developer',
     status: 'Busy',
     downloadCV: 'Download CV',

@@ -16,21 +16,21 @@ import {
 
 export default function Home() {
   const [selectedSection, setSelectedSection] = useState('resume');
-  const [language, setLanguage] = useState('fr');
+  const [language, setLanguage] = useState('FR');
 
   useEffect(function getBrowserLanguage() {
     const browserLanguage = window.navigator.language.split('-')[0];
-    if (browserLanguage === 'fr') {
-      return setLanguage('fr');
+    if (browserLanguage === 'FR') {
+      return setLanguage('FR');
     }
     // fallback to english for any other browser language
-    setLanguage('en');
+    setLanguage('EN');
   }, []);
 
   const { isMobile } = useMobileDetect();
 
-  const isFrench = language === 'fr';
-  const isEnglish = language === 'en';
+  const isFrench = language === 'FR';
+  const isEnglish = language === 'EN';
 
   const getWording = useCallback(
     wordingKey => wording[language][wordingKey],
@@ -55,7 +55,8 @@ export default function Home() {
     aboutMeText,
     openToPartTime,
     education,
-    languages
+    languages,
+    downloadCV
   } = useMemo(() => wording[language], [language]);
 
   return (
@@ -110,7 +111,14 @@ export default function Home() {
                     </a>
                   </li>
                 </ul>
-                {/* <div className="flex group">
+                <a
+                  href={`/CV Milan Barande ${language}.pdf`}
+                  alt="alt text"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                  className="flex group mt-5"
+                >
                   <button className="download-btn">{downloadCV}</button>
                   <button className="download-btn-icon">
                     <svg
@@ -128,7 +136,7 @@ export default function Home() {
                       />
                     </svg>
                   </button>
-                </div> */}
+                </a>
               </div>
             </div>
 
@@ -290,7 +298,7 @@ export default function Home() {
               ['text-3xl']: isMobile(),
               ['text-2xl']: !isMobile()
             })}
-            onClick={() => setLanguage('fr')}
+            onClick={() => setLanguage('FR')}
           >
             🇫🇷
           </button>
@@ -301,7 +309,7 @@ export default function Home() {
               ['text-3xl']: isMobile(),
               ['text-2xl']: !isMobile()
             })}
-            onClick={() => setLanguage('en')}
+            onClick={() => setLanguage('EN')}
           >
             🇬🇧
           </button>
