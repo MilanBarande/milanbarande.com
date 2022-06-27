@@ -9,12 +9,12 @@ export default {
     experience: 'Expériences',
     years: '4+ ans',
     availability: 'Disponible sous',
-    availabilityTime: '1 mois',
+    availabilityTime: '15 Juillet',
     openToFullRemote: 'Ouvert au 100% télétravail',
     yes: 'Oui',
     aboutMe: 'À propos de moi',
     aboutMeText:
-      "Développeur front-end freelance avec plus de 4 ans d'expérience, sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je recherche actuellement une mission front-end (ou mobile) à Paris et/ou en télétravail, de préférence dans une petite structure.<br> Je suis ouvert au temps partiel.",
+      "Développeur front-end freelance avec bientôt 5 ans d'expérience, sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je recherche actuellement une mission front-end (ou full-stack JS) en télétravail. Je peux me déplacer temporairement sur Paris.<br>Je peux travailler en français, anglais ou allemand.",
     resume: 'CV',
     portfolio: 'Portfolio',
     experiences: 'Expériences',
@@ -22,6 +22,7 @@ export default {
     fullTime: 'Temps plein',
     freelance: 'Freelance',
     workshopLead: 'Workshop Lead',
+    pcd: 'Parfums Christian Dior',
     timePcd: "Janv. 2021 - <b>Aujourd'hui</b>",
     timeCdcFree: 'Août 2020 - Janv. 2021',
     timeCdcCdi: 'Avril 2019 - Août 2020',
@@ -46,7 +47,12 @@ export default {
     french: 'Français',
     english: 'Anglais',
     german: 'Allemand',
-    portuguese: 'Portugais'
+    portuguese: 'Portugais',
+    occasional: 'Occasionel',
+    personalization: 'Parcours de personalisation',
+    pcdPersonalizationDescription:
+      "Conception d'un parcours de personalisation de flacon de parfum animé avec mémoire des derniers choix effectués, ajout au panier du produit personalisé et possibilité d'édition",
+    techStack: 'Stack technique'
   },
   en: {
     jobTitle: 'Front-end developer',
@@ -58,12 +64,12 @@ export default {
     experience: 'Experience',
     years: '4+ years',
     availability: 'Availability',
-    availabilityTime: '1 month',
+    availabilityTime: 'July 15th',
     openToFullRemote: 'Open to full remote',
     yes: 'Yes',
     aboutMe: 'About me',
     aboutMeText:
-      "I am a front-end developer with over 4 years of experience. I care about UX, performances, code quality and accessibility. I enjoy teamwork and training junior developers. <br>I'm currently looking for a front-end (or mobile) mission in Paris and/or remotely.<br>I am open to part-time work.",
+      "I am a front-end developer with almost 5 years of experience. I care about UX, performances, code quality and accessibility. I enjoy teamwork and training junior developers. <br>I'm currently looking for a front-end (or full-stack JS) mission in remote. I can temporarily come to your office in Paris.<br>I am capable of working in french, english or german.",
     resume: 'CV',
     portfolio: 'Portfolio',
     experiences: 'Experiences',
@@ -71,6 +77,7 @@ export default {
     fullTime: 'Full Time',
     freelance: 'Freelance',
     workshopLead: 'Workshop Lead',
+    pcd: 'Parfums Christian Dior',
     timePcd: 'Jan. 2021 - <b>Present</b>',
     timeCdcFree: 'August 2020 - Jan. 2021',
     timeCdcCdi: 'April 2019 - August 2020',
@@ -95,6 +102,11 @@ export default {
     french: 'French',
     english: 'English',
     german: 'German',
-    portuguese: 'Portuguese'
+    portuguese: 'Portuguese',
+    occasional: 'Occasional',
+    personalization: 'Personalization Journey',
+    pcdPersonalizationDescription:
+      'Conception of an animated personalization of a perfume bottle with memory of the last choices made, adding to the cart of the personalized product and possibility of editing',
+    techStack: 'Tech Stack'
   }
 };
