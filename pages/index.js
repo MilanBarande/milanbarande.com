@@ -286,7 +286,9 @@ export default function Home() {
                 </div>
               </>
             ) : (
-              <div className="ml-7">Coming soon</div>
+              <div className="ml-7">
+                Coming soon, I am on vacation right now 🌴
+              </div>
             )}
           </div>
         </div>
