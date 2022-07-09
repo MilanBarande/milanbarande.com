@@ -1,14 +1,14 @@
 export default {
   FR: {
     jobTitle: 'Développeur front-end',
-    status: 'En mission',
+    status: 'Disponible Mi-Juillet',
     downloadCV: 'Télécharger CV',
     informations: 'Informations',
     skills: 'Compétences',
     location: 'Localisation',
     experience: 'Expériences',
     years: '4+ ans',
-    availability: 'Disponible sous',
+    availability: 'Disponible au',
     availabilityTime: '15 Juillet',
     openToFullRemote: 'Ouvert au 100% télétravail',
     yes: 'Oui',
@@ -56,7 +56,7 @@ export default {
   },
   EN: {
     jobTitle: 'Front-end developer',
-    status: 'Busy',
+    status: 'Available Mid-July',
     downloadCV: 'Download CV',
     informations: 'Information',
     skills: 'Skills',

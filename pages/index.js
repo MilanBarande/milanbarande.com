@@ -73,7 +73,7 @@ export default function Home() {
             <div className="shadow rounded-xl overflow-hidden">
               <div className={`h-32 bg-cover ${styles.cover}`} />
               <div className="pt-14 p-7 bg-white relative">
-                <span className="status-badge bg-gray-400">{status}</span>
+                <span className="status-badge bg-green-400">{status}</span>
                 <img src="/avatar.jpeg" alt="Avatar" className="user-photo" />
                 <div className="text-lg font-semibold mb-1.5">
                   Milan Barande
