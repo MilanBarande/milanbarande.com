@@ -23,6 +23,7 @@ export default {
     freelance: 'Freelance',
     workshopLead: 'Workshop Lead',
     pcd: 'Parfums Christian Dior',
+    cdc: 'Christian Dior Couture',
     timePcd: "Janv. 2021 - <b>Aujourd'hui</b>",
     timeCdcFree: 'Août 2020 - Janv. 2021',
     timeCdcCdi: 'Avril 2019 - Août 2020',
@@ -51,8 +52,30 @@ export default {
     occasional: 'Occasionel',
     personalization: 'Parcours de personalisation',
     pcdPersonalizationDescription:
-      "Conception d'un parcours de personalisation de flacon de parfum animé avec mémoire des derniers choix effectués, ajout au panier du produit personalisé et possibilité d'édition",
-    techStack: 'Stack technique'
+      "Conception d'un parcours de personalisation de flacon de parfum animé avec mise en mémoire des derniers choix effectués, ajout au panier du produit personalisé et possibilité d'édition. Parcours en plusieurs étapes permettant de changer le bouchon du parfum ainsi que de le graver ou de graver le verre de la bouteille. Ce projet n'est malheureusement pas open-source.",
+    techStack: 'Stack technique',
+    seeMore: 'Voir plus',
+    personalProjects: 'Projet personnel',
+    ticketswoop: 'Ticketswoop',
+    ticketswoopDescription:
+      "Ticketswoop est un bot d'achat automatisé permettant d'obtenir un ticket pour un évènement listé sur la plateforme de revente de billet Ticketswap. Il est possible de lancer son activation régulière afin que celui-ci achète un billet dès qu'il y en a un de disponible. Le bot tourne en mode silencieux par défaut (sans affichage visuel) mais la vidéo ci-dessous permet d'observer son fonctionnement dans un navigateur. Ce projet est à des fins éducatives uniquement.",
+    wasisRb: 'Wasis (Ruby on Rails, legacy)',
+    wasisRbDescription:
+      "Wasis est mon projet de fin de bootcamp au Wagon en 2017. Il s'agit d'une plateforme permettant de trouver des lieux adaptés au télétravail dans une ville donnée. L'interface présente une carte sur laquelle on peut retrouver des cafés, coworking, bibliothèques et autres lieux permettant de travailler dans de bonnes conditions. Le code de cette version en Ruby est toujours disponible mais l'application n'est plus hébergée. Les images ci-dessous sont issues de maquettes utilisant le premier nom 'Work Oasis'. Une nouvelle version aux gouts du jour et scalable en React (NextJS) est en cours de développement.",
+    assembl: 'Assembl',
+    bluenove: 'Bluenove',
+    assemblDescription:
+      "Assembl est une plateforme d'intelligence collective permettant de mettre en discussion des milliers de participations afin de générer de nouvelles idées, voter pour les meilleures d'entre elles et produire un livrable final. J'ai eu l'occasion de développer de nombreuses features sur la V2 d'Assembl (legacy), principalement côté front-end (React) et dans une moindre mesure sur le backend et l'API GraphQL en Python.",
+    navigation: 'Navigation mobile dior.com',
+    checkout: 'Parcours de checkout dior.com',
+    exchangeAndReturns: "Parcours d'échange et de retours dior.com",
+    thisWebsite: 'Ce site',
+    thisWebsiteDescription:
+      "Ce site CV/portfolio a été réalisé à partir d'un template de base HTML/TailwindCSS converti en application NextJS/React sur laquelle j'ai itéré pour ajouter quelques features.",
+    navigationDescription:
+      "Conception d'une navigation animée pour la version mobile de dior.com afin de parcouris les différentes catégories des deux univers de la marque. Cette navigation s'ouvre automatiquement sur la catégorie que l'on est en train de visiter sur le site.",
+    portfolioIntro:
+      "Ce portfolio présente quelques uns de mes projets personnels ainsi que certains des projets que j'ai eu l'opportunité de réaliser à travers mes expériences professionnelles. Il est en cours de construction, d'autres projets seront ajoutés prochainement."
   },
   EN: {
     jobTitle: 'Front-end developer',
@@ -78,6 +101,7 @@ export default {
     freelance: 'Freelance',
     workshopLead: 'Workshop Lead',
     pcd: 'Parfums Christian Dior',
+    cdc: 'Christian Dior Couture',
     timePcd: 'Jan. 2021 - <b>Present</b>',
     timeCdcFree: 'August 2020 - Jan. 2021',
     timeCdcCdi: 'April 2019 - August 2020',
@@ -106,7 +130,29 @@ export default {
     occasional: 'Occasional',
     personalization: 'Personalization Journey',
     pcdPersonalizationDescription:
-      'Conception of an animated personalization of a perfume bottle with memory of the last choices made, adding to the cart of the personalized product and possibility of editing',
-    techStack: 'Tech Stack'
+      'Conception of an animated personalization of a perfume bottle with memory of the last choices made, adding to the cart of the personalized product and possibility of editing. The journey allows to change the wood of the hood, to engrave it, and to engrave the glass of the bottle. This project is closed-source sadly.',
+    techStack: 'Tech Stack',
+    seeMore: 'See more',
+    personalProject: 'Personal project',
+    ticketswoop: 'Ticketswoop',
+    ticketswoopDescription:
+      'Ticketswoop is a bot that automatically purchases tickets for events listed on Ticketswap. It is possible to automatize a run of the script to buy a ticket as soon as it is available. The bot runs in silent mode by default (without visual output) but the video below allows to observe its behavior in a browser. This project is for educational purposes only.',
+    wasisRb: 'Wasis (Ruby on Rails, legacy)',
+    wasisRbDescription:
+      'Wasis is my project at the Wagon bootcamp in 2017. It is a platform that lets the users find places adapted for remote work in a city. The interface presents a map on which you can find cafés, coworking spaces, libraries and other places adapted to work in good conditions. The code of this version in Ruby is still available but the application is not hosted anymore. The images below are from mockups using the first draft name of Work Oasis. A new version with a more modern look and stack in React (NextJS) is under development.',
+    assembl: 'Assembl',
+    bluenove: 'Bluenove',
+    assemblDescription:
+      'Assembl is a collective intelligence platform that enables thousands of participants to discuss to generate new ideas, vote for the best and produce a final product. I have had the opportunity to develop many features on the V2 of Assembl (legacy), mainly on the front-end in React but also on the backend and the GraphQL API in Python.',
+    navigation: 'Dior.com mobile navigation',
+    checkout: 'Dior.com checkout',
+    exchangeAndReturns: 'Dior.com exchange and returns',
+    thisWebsite: 'This website',
+    thisWebsiteDescription:
+      "This CV/portfolio website was created from a basic HTML/TailwindCSS template converted into a NextJS/React application on which I've iterated to add some features.",
+    navigationDescription:
+      "Conception of an animated navigation for dior.com's mobile version. This navigation opens automatically on the category that you are currently visiting on the website.",
+    portfolioIntro:
+      "This portfolio presents some of my personal projects as well as some of the projects and features I've had the opportunity to develop in my professional experiences. It is still under construction, more projects will be added soon."
   }
 };

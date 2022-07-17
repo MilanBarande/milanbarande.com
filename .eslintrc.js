@@ -19,18 +19,15 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'plugin:sonarjs/recommended',
-    'plugin:unicorn/recommended',
     'plugin:security/recommended',
     'plugin:react-hooks/recommended'
   ],
   rules: {
     'no-console': 'warn',
     'react/react-in-jsx-scope': 'off',
-    'react/prop-types': 'off',
-    'unicorn/filename-case': 'off'
+    'react/prop-types': 'off'
   }
 };

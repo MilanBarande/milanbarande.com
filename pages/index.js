@@ -6,18 +6,26 @@ import wording from '../constants/wording';
 import { Github, Linkedin, Email } from '../components/Icons';
 import Experience from '../components/Experience';
 import Studies from '../components/Studies';
+import Card from '../components/Card';
+import Modal from '../components/Modal';
 import useMobileDetect from 'use-mobile-detect-hook';
 import {
   experiencesData,
   skillsData,
   studiesData,
-  languagesData
+  languagesData,
+  portfolioData
 } from '../constants/data';
+import ProjectDetails from '../components/ProjectDetails';
+
+const getProjectData = projectId =>
+  portfolioData.find(({ id }) => id === projectId);
 
 export default function Home() {
   const [selectedSection, setSelectedSection] = useState('resume');
   const [language, setLanguage] = useState('FR');
-
+  const [projectModalId, setProjectModalId] = useState();
+  const closeModal = () => setProjectModalId(undefined);
   useEffect(function getBrowserLanguage() {
     const browserLanguage = window.navigator.language.split('-')[0];
     if (browserLanguage === 'FR') {
@@ -56,7 +64,8 @@ export default function Home() {
     openToPartTime,
     education,
     languages,
-    downloadCV
+    downloadCV,
+    portfolioIntro
   } = useMemo(() => wording[language], [language]);
 
   return (
@@ -190,9 +199,9 @@ export default function Home() {
             <div className="p-7 block-section flow-root">
               <h2 className="block-title">{languages}</h2>
               <div className="-m-2 flex flex-wrap">
-                {languagesData.map(l => (
-                  <span className="skill-tag" key={getWording(l)}>
-                    {getWording(l)}
+                {languagesData.map(language => (
+                  <span className="skill-tag" key={getWording(language)}>
+                    {getWording(language)}
                   </span>
                 ))}
               </div>
@@ -203,7 +212,7 @@ export default function Home() {
             <div className="p-7 pb-0 block-section">
               <h2 className="block-title">{aboutMe}</h2>
               <p
-                className="text-gray-600 mb-5 pb-5 text-justify"
+                className="text-gray-600 mb-5 text-justify"
                 dangerouslySetInnerHTML={{ __html: aboutMeText }}
               />
 
@@ -245,8 +254,7 @@ export default function Home() {
                         dates,
                         status,
                         time,
-                        logo,
-                        withSeparator
+                        logo
                       },
                       index
                     ) => (
@@ -261,7 +269,7 @@ export default function Home() {
                           description={getWording(description)}
                           logo={logo}
                         />
-                        {withSeparator && (
+                        {index + 1 < experiencesData.length && (
                           <div className="border-b border-gray-200 mb-5 mt-5" />
                         )}
                       </Fragment>
@@ -286,30 +294,40 @@ export default function Home() {
                 </div>
               </>
             ) : (
-              <div className="ml-7">
-                Coming soon, I am on vacation right now 🌴
-              </div>
+              <>
+                <p className="px-7 text-justify text-gray-600">
+                  {portfolioIntro}
+                </p>
+                <div className="flex gap-6 flex-wrap">
+                  {portfolioData.map(data => (
+                    <Card
+                      key={data.id}
+                      onClick={() => setProjectModalId(data.id)}
+                      {...data}
+                      title={getWording(data.title)}
+                      subtitle={getWording(data.subtitle)}
+                      cta={getWording(data.cta)}
+                    />
+                  ))}
+                </div>
+              </>
             )}
           </div>
         </div>
         <div className="flex justify-between space-x-3 text-2xl fixed top-2.5 right-5">
           <button
-            className={cn('cursor-pointer', {
-              ['opacity-100']: isFrench,
+            className={cn('cursor-pointer', 'opacity-100', 'text-2xl', {
               ['opacity-40']: !isFrench,
-              ['text-3xl']: isMobile(),
-              ['text-2xl']: !isMobile()
+              ['text-3xl']: isMobile()
             })}
             onClick={() => setLanguage('FR')}
           >
             🇫🇷
           </button>
           <button
-            className={cn('cursor-pointer', {
-              ['opacity-100']: isEnglish,
+            className={cn('cursor-pointer', 'opacity-100', 'text-2xl', {
               ['opacity-40']: !isEnglish,
-              ['text-3xl']: isMobile(),
-              ['text-2xl']: !isMobile()
+              ['text-3xl']: isMobile()
             })}
             onClick={() => setLanguage('EN')}
           >
@@ -317,6 +335,12 @@ export default function Home() {
           </button>
         </div>
       </main>
+      <Modal isOpen={!!getProjectData(projectModalId)} closeModal={closeModal}>
+        <ProjectDetails
+          {...getProjectData(projectModalId)}
+          language={language}
+        />
+      </Modal>
     </div>
   );
 }
