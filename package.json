@@ -29,7 +29,6 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unicorn": "^41.0.1",
     "postcss": "^8.4.12",
     "prettier": "^2.6.0",
     "tailwindcss": "^3.0.23"
