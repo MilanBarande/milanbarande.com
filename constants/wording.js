@@ -1,7 +1,7 @@
 export default {
   FR: {
     jobTitle: 'Développeur front-end',
-    status: 'Disponible Mi-Juillet',
+    status: 'Disponible',
     downloadCV: 'Télécharger CV',
     informations: 'Informations',
     skills: 'Compétences',
@@ -79,7 +79,7 @@ export default {
   },
   EN: {
     jobTitle: 'Front-end developer',
-    status: 'Available Mid-July',
+    status: 'Available',
     downloadCV: 'Download CV',
     informations: 'Information',
     skills: 'Skills',
