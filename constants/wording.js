@@ -50,7 +50,7 @@ export default {
     german: 'Allemand',
     portuguese: 'Portugais',
     occasional: 'Occasionel',
-    personalization: 'Parcours de personalisation',
+    personalization: 'Parcours de personalisation dior.com',
     pcdPersonalizationDescription:
       "Conception d'un parcours de personalisation de flacon de parfum animé avec mise en mémoire des derniers choix effectués, ajout au panier du produit personalisé et possibilité d'édition. Parcours en plusieurs étapes permettant de changer le bouchon du parfum ainsi que de le graver ou de graver le verre de la bouteille. Ce projet n'est malheureusement pas open-source.",
     techStack: 'Stack technique',
@@ -92,7 +92,7 @@ export default {
     yes: 'Yes',
     aboutMe: 'About me',
     aboutMeText:
-      "I am a front-end developer with almost 5 years of experience. I care about UX, performances, code quality and accessibility. I enjoy teamwork and training junior developers. <br>I'm currently looking for a front-end (or full-stack JS) mission in remote. I can temporarily come to your office in Paris.<br>I am capable of working in french, english or german.",
+      "I am a front-end developer with almost 5 years of experience. I care about UX, performances, code quality and accessibility. I enjoy teamwork and training junior developers. <br>I'm currently looking for a full-remote front-end (or full-stack JS) freelancing contract. I can temporarily come to your office in Paris or elsewhere in the EU.<br>I am capable of working in french, english or german.",
     resume: 'CV',
     portfolio: 'Portfolio',
     experiences: 'Experiences',
@@ -128,7 +128,7 @@ export default {
     german: 'German',
     portuguese: 'Portuguese',
     occasional: 'Occasional',
-    personalization: 'Personalization Journey',
+    personalization: 'Dior.com Personalization Journey',
     pcdPersonalizationDescription:
       'Conception of an animated personalization of a perfume bottle with memory of the last choices made, adding to the cart of the personalized product and possibility of editing. The journey allows to change the wood of the hood, to engrave it, and to engrave the glass of the bottle. This project is closed-source sadly.',
     techStack: 'Tech Stack',
