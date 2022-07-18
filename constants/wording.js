@@ -71,7 +71,7 @@ export default {
     exchangeAndReturns: "Parcours d'échange et de retours dior.com",
     thisWebsite: 'Ce site',
     thisWebsiteDescription:
-      "Ce site CV/portfolio a été réalisé à partir d'un template de base HTML/TailwindCSS converti en application NextJS/React sur laquelle j'ai itéré pour ajouter quelques features.",
+      "Ce site CV/portfolio a été réalisé à partir d'un template de base HTML/TailwindCSS converti en application NextJS/React sur laquelle j'ai itéré pour ajouter quelques features. Le site est entièrement responsive.",
     navigationDescription:
       "Conception d'une navigation animée pour la version mobile de dior.com afin de parcouris les différentes catégories des deux univers de la marque. Cette navigation s'ouvre automatiquement sur la catégorie que l'on est en train de visiter sur le site.",
     portfolioIntro:
@@ -149,7 +149,7 @@ export default {
     exchangeAndReturns: 'Dior.com exchange and returns',
     thisWebsite: 'This website',
     thisWebsiteDescription:
-      "This CV/portfolio website was created from a basic HTML/TailwindCSS template converted into a NextJS/React application on which I've iterated to add some features.",
+      "This CV/portfolio website was created from a basic HTML/TailwindCSS template converted into a NextJS/React application on which I've iterated to add some features. The website is fully responsive.",
     navigationDescription:
       "Conception of an animated navigation for dior.com's mobile version. This navigation opens automatically on the category that you are currently visiting on the website.",
     portfolioIntro:
