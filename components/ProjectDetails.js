@@ -1,5 +1,4 @@
 import { Carousel } from 'flowbite-react';
-import wording from '../constants/wording';
 import Image from 'next/image';
 import useMobileDetect from 'use-mobile-detect-hook';
 import { Github, WebsiteLink } from '../components/Icons';
@@ -12,7 +11,7 @@ export default function ProjectDetails({
   stack,
   images,
   youtubeId,
-  language,
+  getWordingByKey,
   link,
   github
 }) {
@@ -22,11 +21,11 @@ export default function ProjectDetails({
   return (
     <div className="p-3 lg:px-10 relative">
       <div className="lg:px-7">
-        <h2 className="mb-2 text-2xl">{wording[language][title]}</h2>
+        <h2 className="mb-2 text-2xl">{getWordingByKey(title)}</h2>
         {subtitle && (
           <div className="mb-4 flex items-center space-x-5">
             <h3 className="text-xl font-semibold">
-              {wording[language][subtitle]} {year && `(${year})`}
+              {getWordingByKey(subtitle)} {year && `(${year})`}
             </h3>
             {github && (
               <a
@@ -50,7 +49,7 @@ export default function ProjectDetails({
             )}
           </div>
         )}
-        <p className="mb-4">{wording[language][description]} </p>
+        <p className="mb-4">{getWordingByKey(description)} </p>
       </div>
       <>
         {(images || youtubeId) && (
@@ -83,7 +82,7 @@ export default function ProjectDetails({
       </>
       {stack && (
         <div className="pt-5 lg:p-7 flow-root">
-          <h3 className="block-title">{wording[language].techStack}</h3>
+          <h3 className="block-title">{getWordingByKey('techStack')}</h3>
           <div className="-m-2 flex flex-wrap">
             {stack.map(technology => (
               <span className="skill-tag" key={technology}>

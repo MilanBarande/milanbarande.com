@@ -25,8 +25,12 @@ const getProjectData = projectId =>
 export default function Home() {
   const [selectedSection, setSelectedSection] = useState('resume');
   const [language, setLanguage] = useState('FR');
+  const isFrench = language === 'FR';
+  const isEnglish = language === 'EN';
+
   const [projectModalId, setProjectModalId] = useState();
   const closeModal = () => setProjectModalId(undefined);
+
   useEffect(function getBrowserLanguage() {
     const browserLanguage = window.navigator.language.split('-')[0];
     if (browserLanguage === 'FR') {
@@ -38,10 +42,7 @@ export default function Home() {
 
   const { isMobile } = useMobileDetect();
 
-  const isFrench = language === 'FR';
-  const isEnglish = language === 'EN';
-
-  const getWording = useCallback(
+  const getWordingByKey = useCallback(
     wordingKey => wording[language][wordingKey],
     [language]
   );
@@ -200,8 +201,8 @@ export default function Home() {
               <h2 className="block-title">{languages}</h2>
               <div className="-m-2 flex flex-wrap">
                 {languagesData.map(language => (
-                  <span className="skill-tag" key={getWording(language)}>
-                    {getWording(language)}
+                  <span className="skill-tag" key={getWordingByKey(language)}>
+                    {getWordingByKey(language)}
                   </span>
                 ))}
               </div>
@@ -260,13 +261,13 @@ export default function Home() {
                     ) => (
                       <Fragment key={`${jobTitle}-${index}`}>
                         <Experience
-                          jobTitle={getWording(jobTitle)}
+                          jobTitle={getWordingByKey(jobTitle)}
                           employer={employer}
                           location={location}
-                          dates={getWording(dates)}
-                          time={getWording(time)}
-                          status={getWording(status)}
-                          description={getWording(description)}
+                          dates={getWordingByKey(dates)}
+                          time={getWordingByKey(time)}
+                          status={getWordingByKey(status)}
+                          description={getWordingByKey(description)}
                           logo={logo}
                         />
                         {index + 1 < experiencesData.length && (
@@ -281,12 +282,12 @@ export default function Home() {
                   {studiesData.map(
                     ({ title, dates, location, logo, school }, index) => (
                       <Studies
-                        title={getWording(title)}
+                        title={getWordingByKey(title)}
                         dates={dates}
                         location={location}
                         logo={logo}
                         school={school}
-                        key={getWording(title)}
+                        key={getWordingByKey(title)}
                         isLast={index + 1 === studiesData.length}
                       />
                     )
@@ -304,9 +305,9 @@ export default function Home() {
                       key={data.id}
                       onClick={() => setProjectModalId(data.id)}
                       {...data}
-                      title={getWording(data.title)}
-                      subtitle={getWording(data.subtitle)}
-                      cta={getWording(data.cta)}
+                      title={getWordingByKey(data.title)}
+                      subtitle={getWordingByKey(data.subtitle)}
+                      cta={getWordingByKey(data.cta)}
                     />
                   ))}
                 </div>
@@ -338,7 +339,7 @@ export default function Home() {
       <Modal isOpen={!!getProjectData(projectModalId)} closeModal={closeModal}>
         <ProjectDetails
           {...getProjectData(projectModalId)}
-          language={language}
+          getWordingByKey={getWordingByKey}
         />
       </Modal>
     </div>
