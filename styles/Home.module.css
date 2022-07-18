@@ -5,9 +5,3 @@
 .udem-logo {
   background-image: url('/bu-logo.jpg');
 }
-
-.languages-selector {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-}
