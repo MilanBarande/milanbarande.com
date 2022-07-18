@@ -16,6 +16,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-modal": "^3.15.1",
+    "react-obfuscate-email": "^1.0.16",
     "use-mobile-detect-hook": "^1.0.5"
   },
   "devDependencies": {

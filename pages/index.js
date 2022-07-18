@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import { useState, useMemo, Fragment, useCallback, useEffect } from 'react';
 import cn from 'classnames';
 import wording from '../constants/wording';
-import { Github, Linkedin, Email } from '../components/Icons';
+import { Github, Linkedin, Email as EmailIcon } from '../components/Icons';
 import Experience from '../components/Experience';
 import Studies from '../components/Studies';
 import Card from '../components/Card';
@@ -17,6 +17,7 @@ import {
   portfolioData
 } from '../constants/data';
 import ProjectDetails from '../components/ProjectDetails';
+import { Email } from 'react-obfuscate-email';
 
 const getProjectData = projectId =>
   portfolioData.find(({ id }) => id === projectId);
@@ -110,14 +111,13 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="mailto:milan.barande@gmail.com"
-                      className="social-link-hover"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Email height={20} width={20} />
-                    </a>
+                    <Email email="milan.barande@gmail.com">
+                      <EmailIcon
+                        height={20}
+                        width={20}
+                        className="social-link-hover"
+                      />
+                    </Email>
                   </li>
                 </ul>
                 <a
