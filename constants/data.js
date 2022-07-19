@@ -137,7 +137,7 @@ export const portfolioData = [
     title: 'thisWebsite',
     subtitle: 'personalProject',
     description: 'thisWebsiteDescription',
-    stack: ['NextJS', 'React', 'TailwindCSS'],
+    stack: ['NextJS', 'React', 'TailwindCSS', 'Vercel'],
     github: 'https://github.com/MilanBarande/milanbarande.com',
     imageSrc: '/thisWebsite.webp',
     link: 'https://www.milanbarande.com'
@@ -148,11 +148,31 @@ export const portfolioData = [
     title: 'mettaway',
     subtitle: 'personalProject',
     description: 'mettawayDescription',
-    stack: ['React', 'TypeScript', 'SCSS', 'NextJS'],
+    stack: ['React', 'TypeScript', 'SCSS', 'NextJS', 'Vercel'],
     imageSrc: '/mettaway.webp',
     images: [{ src: '/mettaway.webp', alt: 'Mettaway illustration' }],
     link: 'https://www.mettaway.voyage',
     github: 'https://github.com/MilanBarande/mettaway'
+  },
+  {
+    id: 'hashverse',
+    year: '2021',
+    title: 'hashverseStudio',
+    subtitle: 'personalProject',
+    description: 'hashverseStudioDescription',
+    stack: [
+      'NextJS',
+      'React',
+      'Vercel',
+      'TypeScript',
+      'Ethereum',
+      'Ethers.js',
+      'Hardhat',
+      'Web3 Modal'
+    ],
+    imageSrc: '/hashverse.webp',
+    link: 'https://www.hashverse.studio',
+    youtubeId: 'AWnZIpNYIgM'
   },
   {
     id: 'wasis-rb',
@@ -160,12 +180,30 @@ export const portfolioData = [
     title: 'wasisRb',
     subtitle: 'personalProject',
     description: 'wasisRbDescription',
-    stack: ['Ruby on Rails', 'jQuery', 'Google Maps API', 'PostgreSQL'],
+    stack: [
+      'Ruby on Rails',
+      'jQuery',
+      'Google Maps API',
+      'PostgreSQL',
+      'Heroku'
+    ],
     github: 'https://github.com/MilanBarande/wasis-legacy',
     imageSrc: '/wasis-rb.jpg',
     images: ['/oasis1.webp', '/oasis2.webp', '/oasis3.webp'],
     alt: 'Wasis RB illustration'
   },
+  // {
+  //   id: 'leon-the-singer',
+  //   year: '2018',
+  //   title: 'leonTheSinger',
+  //   subtitle: 'personalProject',
+  //   description: 'leonTheSingerDescription',
+  //   stack: ['Gatsby', 'React', 'Netlify'],
+  //   github: 'https://github.com/MilanBarande/leon-gatsby',
+  //   imageSrc: '/leonthesinger.webp',
+  //   alt: 'leonthesinger.com illustration',
+  //   link: 'https://leonthesinger.com'
+  // },
   {
     id: 'navigation',
     year: '2022',

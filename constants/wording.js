@@ -75,11 +75,15 @@ export default {
     navigationDescription:
       "Conception d'une navigation animée pour la version mobile de dior.com afin de parcouris les différentes catégories des deux univers de la marque. Cette navigation s'ouvre automatiquement sur la catégorie que l'on est en train de visiter sur le site.",
     portfolioIntro:
-      "Ce portfolio présente quelques uns de mes projets personnels ainsi que certains des projets que j'ai eu l'opportunité de réaliser à travers mes expériences professionnelles. Il est <b>en cours de construction</b>, d'autres projets seront ajoutés prochainement.",
+      "Ce portfolio présente quelques uns de mes projets personnels ainsi que certains des projets que j'ai eu l'opportunité de réaliser à travers mes expériences professionnelles. Il est <b>en cours de construction</b>, d'autres projets seront ajoutés.",
     mettaway: 'Mettaway',
     mettawayDescription:
       "Site vitrine minimaliste du festival de musique Mettaway. Une simple application NextJS pour un site statique avec quelques liens. L'aspect visuel est revu chaque année en fonction du thème de la prochaine édition.",
-    personalProject: 'Projet personnel'
+    personalProject: 'Projet personnel',
+    leonTheSinger: 'leonthesinger.com',
+    hashverseStudio: 'hashverse.studio',
+    hashverseStudioDescription:
+      "Site officiel du Hashverse Studio, un studio de création de jeux Web 3. Le site présente l'équipe, ses projets, son équipe, son équipe professionnelle E-sports. Il permet aussi d'interragir avec des smart contracts Ethereum afin de créer son NFT de membre du Hashverse, univers créé par le studio."
   },
   EN: {
     jobTitle: 'Front-end developer',
@@ -157,9 +161,15 @@ export default {
     navigationDescription:
       "Conception of an animated navigation for dior.com's mobile version. This navigation opens automatically on the category that you are currently visiting on the website.",
     portfolioIntro:
-      "This portfolio presents some of my personal projects as well as some of the projects and features I've had the opportunity to develop in my professional experiences. It is still <b>under construction</b>, more projects will be added soon.",
+      "This portfolio presents some of my personal projects as well as some of the projects and features I've had the opportunity to develop in my professional experiences. It is still <b>under construction</b>, more projects will be added.",
     mettaway: 'Mettaway',
     mettawayDescription:
-      'Minimalistic website for the Mettaway music festival. A simple NextJS application for a static website with some links. The visual aspect is revised each year according to the theme of the next edition.'
+      'Minimalistic website for the Mettaway music festival. A simple NextJS application for a static website with some links. The visual aspect is revised each year according to the theme of the next edition.',
+    leonTheSinger: 'leonthesinger.com',
+    leonTheSingerDescription:
+      "Minimalistic static website for the artist 'Leon the Singer' made with Gatsby. Design by the artist himself.",
+    hashverseStudio: 'hashverse.studio',
+    hashverseStudioDescription:
+      'Official website of the Hashverse studio, a web3 videogames studio. The website presents the team, its projects and its professionnal E-sports team. It also lets you mint your own Hashverse member card NFT by interacting with Ethereum smart contracts.'
   }
 };

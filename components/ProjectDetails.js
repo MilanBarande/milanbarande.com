@@ -1,5 +1,4 @@
 import { Carousel } from 'flowbite-react';
-import Image from 'next/image';
 import useMobileDetect from 'use-mobile-detect-hook';
 import { Github, WebsiteLink } from '../components/Icons';
 
