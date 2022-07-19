@@ -75,7 +75,7 @@ export default {
     navigationDescription:
       "Conception d'une navigation animée pour la version mobile de dior.com afin de parcouris les différentes catégories des deux univers de la marque. Cette navigation s'ouvre automatiquement sur la catégorie que l'on est en train de visiter sur le site.",
     portfolioIntro:
-      "Ce portfolio présente quelques uns de mes projets personnels ainsi que certains des projets que j'ai eu l'opportunité de réaliser à travers mes expériences professionnelles. Il est en cours de construction, d'autres projets seront ajoutés prochainement."
+      "Ce portfolio présente quelques uns de mes projets personnels ainsi que certains des projets que j'ai eu l'opportunité de réaliser à travers mes expériences professionnelles. Il est <b>en cours de construction</b>, d'autres projets seront ajoutés prochainement."
   },
   EN: {
     jobTitle: 'Front-end developer',
@@ -153,6 +153,6 @@ export default {
     navigationDescription:
       "Conception of an animated navigation for dior.com's mobile version. This navigation opens automatically on the category that you are currently visiting on the website.",
     portfolioIntro:
-      "This portfolio presents some of my personal projects as well as some of the projects and features I've had the opportunity to develop in my professional experiences. It is still under construction, more projects will be added soon."
+      "This portfolio presents some of my personal projects as well as some of the projects and features I've had the opportunity to develop in my professional experiences. It is still <b>under construction</b>, more projects will be added soon."
   }
 };

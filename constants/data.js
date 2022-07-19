@@ -107,26 +107,17 @@ export const languagesData = ['french', 'english', 'german', 'portuguese'];
 
 export const portfolioData = [
   {
-    id: 'personalization',
-    year: '2022',
-    title: 'personalization',
-    subtitle: 'pcd',
-    description: 'pcdPersonalizationDescription',
-    stack: [
-      'React',
-      'SCSS',
-      'NextJS',
-      'TypeScript',
-      'GraphQL',
-      'NodeJS',
-      'Apollo',
-      'Jest',
-      'Storybook'
-    ],
-    youtubeId: 'qUaZVBvgSpc',
-    imageSrc: '/perso.webp',
-    alt: 'Perfume personalization illustration',
-    link: 'https://www.dior.com'
+    id: 'assembl',
+    year: '2017-2019',
+    title: 'assembl',
+    subtitle: 'bluenove',
+    description: 'assemblDescription',
+    stack: ['React', 'Redux', 'SCSS', 'NextJS', 'Flow', 'GraphQL', 'Python'],
+    github: 'https://github.com/assembl/assembl',
+    youtubeId: '_hg3WvRdmUU',
+    imageSrc: '/assembl.webp',
+    alt: 'Assembl illustration',
+    link: 'https://bluenove.com/offres/assembl/'
   },
   {
     id: 'ticketswoop',
@@ -152,19 +143,6 @@ export const portfolioData = [
     link: 'https://www.milanbarande.com'
   },
   {
-    id: 'assembl',
-    year: '2017-2019',
-    title: 'assembl',
-    subtitle: 'bluenove',
-    description: 'assemblDescription',
-    stack: ['React', 'Redux', 'SCSS', 'NextJS', 'Flow', 'GraphQL', 'Python'],
-    github: 'https://github.com/assembl/assembl',
-    youtubeId: '_hg3WvRdmUU',
-    imageSrc: '/assembl.webp',
-    alt: 'Assembl illustration',
-    link: 'https://bluenove.com/offres/assembl/'
-  },
-  {
     id: 'wasis-rb',
     year: '2017',
     title: 'wasisRb',
@@ -186,7 +164,7 @@ export const portfolioData = [
     stack: ['React', 'SCSS', 'NextJS', 'TypeScript', 'Jest', 'Storybook'],
     imageSrc: '/navigation.webp',
     link: 'https://www.dior.com'
-  }
+  },
   // {
   //   id: 'lineSso',
   //   title: 'lineSso',
@@ -201,7 +179,7 @@ export const portfolioData = [
   //   subtitle: 'cdc',
   //   description: 'checkoutDescription',
   //   stack: ['React', 'Redux', 'RxJS', 'SCSS', 'Jest', 'Storybook', 'REST API'],
-  // link: 'https://www.dior.com'
+  //   link: 'https://www.dior.com'
   // },
   // {
   //   id: 'exchangeAndReturns',
@@ -220,6 +198,28 @@ export const portfolioData = [
   //     'Jest',
   //     'Storybook'
   //   ],
-  // link: 'https://www.dior.com'
+  //   link: 'https://www.dior.com'
   // },
+  {
+    id: 'personalization',
+    year: '2022',
+    title: 'personalization',
+    subtitle: 'pcd',
+    description: 'pcdPersonalizationDescription',
+    stack: [
+      'React',
+      'SCSS',
+      'NextJS',
+      'TypeScript',
+      'GraphQL',
+      'NodeJS',
+      'Apollo',
+      'Jest',
+      'Storybook'
+    ],
+    youtubeId: 'qUaZVBvgSpc',
+    imageSrc: '/perso.webp',
+    alt: 'Perfume personalization illustration',
+    link: 'https://www.dior.com'
+  }
 ];

@@ -13,9 +13,12 @@ export default function Portfolio({ getWordingByKey }) {
 
   return (
     <>
-      <p className="px-7 text-justify text-gray-600">
-        {getWordingByKey('portfolioIntro')}
-      </p>
+      <p
+        className="px-7 text-justify text-gray-600"
+        dangerouslySetInnerHTML={{
+          __html: getWordingByKey('portfolioIntro')
+        }}
+      />
       <div className="flex gap-6 flex-wrap">
         {portfolioData.map(data => (
           <Card
