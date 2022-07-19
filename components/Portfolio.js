@@ -22,9 +22,9 @@ export default function Portfolio({ getWordingByKey }) {
       <div className="flex gap-6 flex-wrap">
         {portfolioData.map(data => (
           <Card
+            {...data}
             key={data.id}
             onClick={() => setProjectModalId(data.id)}
-            {...data}
             title={getWordingByKey(data.title)}
             subtitle={getWordingByKey(data.subtitle)}
             cta={getWordingByKey(data.cta)}

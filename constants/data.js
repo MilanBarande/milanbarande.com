@@ -143,6 +143,18 @@ export const portfolioData = [
     link: 'https://www.milanbarande.com'
   },
   {
+    id: 'mettaway',
+    year: '2021',
+    title: 'mettaway',
+    subtitle: 'personalProject',
+    description: 'mettawayDescription',
+    stack: ['React', 'TypeScript', 'SCSS', 'NextJS'],
+    imageSrc: '/mettaway.webp',
+    images: [{ src: '/mettaway.webp', alt: 'Mettaway illustration' }],
+    link: 'https://www.mettaway.voyage',
+    github: 'https://github.com/MilanBarande/mettaway'
+  },
+  {
     id: 'wasis-rb',
     year: '2017',
     title: 'wasisRb',

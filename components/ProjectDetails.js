@@ -15,7 +15,7 @@ export default function ProjectDetails({
   link,
   github
 }) {
-  const hasSeveralMedias = images && [youtubeId, ...images].length > 1;
+  const hasSeveralImages = images && images.length > 1;
   const { isMobile } = useMobileDetect();
   const isMobileDevice = isMobile();
   return (
@@ -54,7 +54,7 @@ export default function ProjectDetails({
       <>
         {(images || youtubeId) && (
           <div className="lg:px-7">
-            {hasSeveralMedias ? (
+            {hasSeveralImages ? (
               <div className="carousel-container">
                 <Carousel slide={!youtubeId} slideInterval={3000}>
                   {images.map(src => (
@@ -75,7 +75,7 @@ export default function ProjectDetails({
                 />
               </div>
             ) : (
-              <Image src={images[0].src} alt={images[0].alt} />
+              <img src={images[0].src} alt={images[0].alt} />
             )}
           </div>
         )}
