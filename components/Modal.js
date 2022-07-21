@@ -1,7 +1,6 @@
 import ReactModal from 'react-modal';
 import Cross from './Cross';
 import useMobileDetect from 'use-mobile-detect-hook';
-import { useMemo } from 'react';
 
 ReactModal.setAppElement('#__next');
 
@@ -22,7 +21,8 @@ const getStyle = isMobile => ({
 const Modal = ({ isOpen, closeModal, children }) => {
   const { isMobile: getIsMobile } = useMobileDetect();
   const isMobile = getIsMobile();
-  const style = useMemo(() => getStyle(isMobile), [isMobile]);
+  const style = getStyle(isMobile);
+
   return (
     <ReactModal isOpen={isOpen} onRequestClose={closeModal} style={style}>
       <div className="sticky top-0 right-5 z-10 w-full flex justify-end">

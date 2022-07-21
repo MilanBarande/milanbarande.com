@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { useState, useMemo, useCallback, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import wording from '../constants/wording';
 import { skillsData, languagesData } from '../constants/data';
 import {
@@ -27,10 +27,7 @@ export default function Home() {
     setLanguage('EN');
   }, []);
 
-  const getWordingByKey = useCallback(
-    wordingKey => wording[language][wordingKey],
-    [language]
-  );
+  const getWordingByKey = wordingKey => wording[language][wordingKey];
 
   const {
     jobTitle,
@@ -40,7 +37,7 @@ export default function Home() {
     aboutMeText,
     languages,
     downloadCV
-  } = useMemo(() => wording[language], [language]);
+  } = wording[language];
 
   return (
     <div className={styles.container}>
