@@ -13,6 +13,8 @@ import LanguageButtons from './LanguageButtons';
 import StyledList from './StyledList';
 import Tabs from './Tabs';
 import DownloadCvButton from './DownloadCvButton';
+import MainContent from './MainContent';
+import ProfileCard from './ProfileCard';
 
 export {
   Card,
@@ -29,5 +31,7 @@ export {
   LanguageButtons,
   StyledList,
   Tabs,
-  DownloadCvButton
+  DownloadCvButton,
+  MainContent,
+  ProfileCard
 };

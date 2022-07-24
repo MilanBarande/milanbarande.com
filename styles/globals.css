@@ -1258,3 +1258,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 32rem;
   }
 }
+
+.cover {
+  background-image: url("/cover.jpg");
+}
+
+.udem-logo {
+  background-image: url('/bu-logo.jpg');
+}
