@@ -15,12 +15,12 @@ export default function Informations({ getWordingByKey }) {
             {getWordingByKey('years')}
           </div>
         </div>
-        <div className="flex justify-between">
+        {/* <div className="flex justify-between">
           <div className="text-gray-400">{getWordingByKey('availability')}</div>
           <div className="font-medium text-right text-gray-600">
             {getWordingByKey('availabilityTime')}
           </div>
-        </div>
+        </div> */}
         <div className="flex justify-between">
           <div className="text-gray-400">
             {getWordingByKey('openToFullRemote')}
