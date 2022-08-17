@@ -1,91 +1,94 @@
+const frWording = {
+  jobTitle: 'Développeur front-end',
+  status: 'Disponible',
+  downloadCV: 'Télécharger CV',
+  informations: 'Informations',
+  skills: 'Compétences',
+  location: 'Localisation',
+  experience: 'Expériences',
+  years: '5 ans',
+  availability: 'Disponible au',
+  availabilityTime: '15 Juillet',
+  openToFullRemote: 'Ouvert au 100% télétravail',
+  yes: 'Oui',
+  aboutMe: 'À propos de moi',
+  aboutMeText:
+    "Développeur front-end freelance avec bientôt 5 ans d'expérience, sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je recherche actuellement une mission front-end (ou full-stack JS) en télétravail. Je peux me déplacer temporairement sur Paris.<br>Je peux travailler en français, anglais ou allemand.",
+  resume: 'CV',
+  portfolio: 'Portfolio',
+  experiences: 'Expériences',
+  frontendDeveloper: 'Développeur front-end',
+  fullTime: 'Temps plein',
+  freelance: 'Freelance',
+  workshopLead: 'Workshop Lead',
+  pcd: 'Parfums Christian Dior',
+  cdc: 'Christian Dior Couture',
+  timePcd: "Janv. 2021 - <b>Aujourd'hui</b>",
+  timeCdcFree: 'Août 2020 - Janv. 2021',
+  timeCdcCdi: 'Avril 2019 - Août 2020',
+  cdi: 'CDI',
+  descriptionPcd:
+    'Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus.Aut quasi sunt dolor.Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem.Enim quo sed et sint aspernatur distinctio qui quam.',
+  descriptionCdcCdi:
+    "Développement du front-end et de l'API GraphQL de dior.com, une application isomorphique entièrement écrite en programmation fonctionnelle avec React, NextJS, TypeScript, Redux, Apollo GraphQL, recompose, rx-js...",
+  timeWagon: 'Déc. 2017 - Nov. 2019',
+  descriptionWagon:
+    "Animation ponctuelle de workshops de code tels que : <br>- Création d'une landing page en HTML/CSS<br>- Introduction à JavaScript <br>- Introduction à React",
+  timeBluenove: 'Sept. 2017 - Avril 2019',
+  descriptionBluenove:
+    "Développement d'Assembl, une application open source permettant à des milliers de personnes de travailler efficacement sur la définition de nouvelles idées.<br>Le front-end d'Assemble est développé avec React, Redux, GraphQL, Sass, Jest, flow, webpack...",
+  bachelorKinesiology: 'Licence en Kinésiologie',
+  mastersNeuroscience: 'Master en Neurosciences',
+  education: 'Etudes',
+  openToPartTime: 'Ouvert au temps partiel',
+  webDevBootcamp: 'Bootcamp en développement web',
+  researchAssistant: 'Assistant de recherche au PERFORM Center Sleep Lab',
+  languages: 'Langues',
+  french: 'Français',
+  english: 'Anglais',
+  german: 'Allemand',
+  portuguese: 'Portugais',
+  occasional: 'Occasionel',
+  personalization: 'Parcours de personalisation dior.com',
+  pcdPersonalizationDescription:
+    "Conception d'un parcours de personalisation de flacon de parfum animé avec mise en mémoire des derniers choix effectués, ajout au panier du produit personalisé et possibilité d'édition. Parcours en plusieurs étapes permettant de changer le bouchon du parfum ainsi que de le graver ou de graver le verre de la bouteille. Ce projet n'est malheureusement pas open-source.",
+  techStack: 'Stack technique',
+  seeMore: 'Voir plus',
+  personalProjects: 'Projet personnel',
+  ticketswoop: 'Ticketswoop',
+  ticketswoopDescription:
+    "Ticketswoop est un bot d'achat automatisé permettant d'obtenir un ticket pour un évènement listé sur la plateforme de revente de billet Ticketswap. Il est possible de lancer son activation régulière afin que celui-ci achète un billet dès qu'il y en a un de disponible. Le bot tourne en mode silencieux par défaut (sans affichage visuel) mais la vidéo ci-dessous permet d'observer son fonctionnement dans un navigateur. Ce projet est à des fins éducatives uniquement.",
+  wasisRb: 'Wasis (Ruby on Rails, legacy)',
+  wasisRbDescription:
+    "Wasis est mon projet de fin de bootcamp au Wagon en 2017. Il s'agit d'une plateforme permettant de trouver des lieux adaptés au télétravail dans une ville donnée. L'interface présente une carte sur laquelle on peut retrouver des cafés, coworking, bibliothèques et autres lieux permettant de travailler dans de bonnes conditions. Le code de cette version en Ruby est toujours disponible mais l'application n'est plus hébergée. Les images ci-dessous sont issues de maquettes utilisant le premier nom 'Work Oasis'. Une nouvelle version aux gouts du jour et scalable en React (NextJS) est en cours de développement.",
+  assembl: 'Assembl',
+  bluenove: 'Bluenove',
+  assemblDescription:
+    "Assembl est une plateforme d'intelligence collective permettant de mettre en discussion des milliers de participations afin de générer de nouvelles idées, voter pour les meilleures d'entre elles et produire un livrable final. J'ai eu l'occasion de développer de nombreuses features sur la V2 d'Assembl (legacy), principalement côté front-end (React) et dans une moindre mesure sur le backend et l'API GraphQL en Python.",
+  navigation: 'Navigation mobile dior.com',
+  checkout: 'Parcours de checkout dior.com',
+  exchangeAndReturns: "Parcours d'échange et de retours dior.com",
+  thisWebsite: 'Ce site',
+  thisWebsiteDescription:
+    "Ce site CV/portfolio a été réalisé à partir d'un template de base HTML/TailwindCSS converti en application NextJS/React sur laquelle j'ai itéré pour ajouter quelques features. Le site est entièrement responsive.",
+  navigationDescription:
+    "Conception d'une navigation animée pour la version mobile de dior.com afin de parcouris les différentes catégories des deux univers de la marque. Cette navigation s'ouvre automatiquement sur la catégorie que l'on est en train de visiter sur le site.",
+  portfolioIntro:
+    "Ce portfolio présente quelques uns de mes projets personnels ainsi que certains des projets que j'ai eu l'opportunité de réaliser à travers mes expériences professionnelles. Il est <b>en cours de construction</b>, d'autres projets seront ajoutés.",
+  mettaway: 'Mettaway',
+  mettawayDescription:
+    "Site vitrine minimaliste du festival de musique Mettaway. Une simple application NextJS pour un site statique avec quelques liens. L'aspect visuel est revu chaque année en fonction du thème de la prochaine édition.",
+  personalProject: 'Projet personnel',
+  leonTheSinger: 'leonthesinger.com',
+  hashverseStudio: 'hashverse.studio',
+  hashverseStudioDescription:
+    "Site officiel du Hashverse Studio, un studio de création de jeux Web 3. Le site présente l'équipe, ses projets, son équipe, son équipe professionnelle E-sports. Il permet aussi d'interragir avec des smart contracts Ethereum afin de créer son NFT de membre du Hashverse, univers créé par le studio."
+};
+
 export default {
-  FR: {
-    jobTitle: 'Développeur front-end',
-    status: 'Disponible',
-    downloadCV: 'Télécharger CV',
-    informations: 'Informations',
-    skills: 'Compétences',
-    location: 'Localisation',
-    experience: 'Expériences',
-    years: '5 ans',
-    availability: 'Disponible au',
-    availabilityTime: '15 Juillet',
-    openToFullRemote: 'Ouvert au 100% télétravail',
-    yes: 'Oui',
-    aboutMe: 'À propos de moi',
-    aboutMeText:
-      "Développeur front-end freelance avec bientôt 5 ans d'expérience, sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je recherche actuellement une mission front-end (ou full-stack JS) en télétravail. Je peux me déplacer temporairement sur Paris.<br>Je peux travailler en français, anglais ou allemand.",
-    resume: 'CV',
-    portfolio: 'Portfolio',
-    experiences: 'Expériences',
-    frontendDeveloper: 'Développeur front-end',
-    fullTime: 'Temps plein',
-    freelance: 'Freelance',
-    workshopLead: 'Workshop Lead',
-    pcd: 'Parfums Christian Dior',
-    cdc: 'Christian Dior Couture',
-    timePcd: "Janv. 2021 - <b>Aujourd'hui</b>",
-    timeCdcFree: 'Août 2020 - Janv. 2021',
-    timeCdcCdi: 'Avril 2019 - Août 2020',
-    cdi: 'CDI',
-    descriptionPcd:
-      'Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus.Aut quasi sunt dolor.Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem.Enim quo sed et sint aspernatur distinctio qui quam.',
-    descriptionCdcCdi:
-      "Développement du front-end et de l'API GraphQL de dior.com, une application isomorphique entièrement écrite en programmation fonctionnelle avec React, NextJS, TypeScript, Redux, Apollo GraphQL, recompose, rx-js...",
-    timeWagon: 'Déc. 2017 - Nov. 2019',
-    descriptionWagon:
-      "Animation ponctuelle de workshops de code tels que : <br>- Création d'une landing page en HTML/CSS<br>- Introduction à JavaScript <br>- Introduction à React",
-    timeBluenove: 'Sept. 2017 - Avril 2019',
-    descriptionBluenove:
-      "Développement d'Assembl, une application open source permettant à des milliers de personnes de travailler efficacement sur la définition de nouvelles idées.<br>Le front-end d'Assemble est développé avec React, Redux, GraphQL, Sass, Jest, flow, webpack...",
-    bachelorKinesiology: 'Licence en Kinésiologie',
-    mastersNeuroscience: 'Master en Neurosciences',
-    education: 'Etudes',
-    openToPartTime: 'Ouvert au temps partiel',
-    webDevBootcamp: 'Bootcamp en développement web',
-    researchAssistant: 'Assistant de recherche au PERFORM Center Sleep Lab',
-    languages: 'Langues',
-    french: 'Français',
-    english: 'Anglais',
-    german: 'Allemand',
-    portuguese: 'Portugais',
-    occasional: 'Occasionel',
-    personalization: 'Parcours de personalisation dior.com',
-    pcdPersonalizationDescription:
-      "Conception d'un parcours de personalisation de flacon de parfum animé avec mise en mémoire des derniers choix effectués, ajout au panier du produit personalisé et possibilité d'édition. Parcours en plusieurs étapes permettant de changer le bouchon du parfum ainsi que de le graver ou de graver le verre de la bouteille. Ce projet n'est malheureusement pas open-source.",
-    techStack: 'Stack technique',
-    seeMore: 'Voir plus',
-    personalProjects: 'Projet personnel',
-    ticketswoop: 'Ticketswoop',
-    ticketswoopDescription:
-      "Ticketswoop est un bot d'achat automatisé permettant d'obtenir un ticket pour un évènement listé sur la plateforme de revente de billet Ticketswap. Il est possible de lancer son activation régulière afin que celui-ci achète un billet dès qu'il y en a un de disponible. Le bot tourne en mode silencieux par défaut (sans affichage visuel) mais la vidéo ci-dessous permet d'observer son fonctionnement dans un navigateur. Ce projet est à des fins éducatives uniquement.",
-    wasisRb: 'Wasis (Ruby on Rails, legacy)',
-    wasisRbDescription:
-      "Wasis est mon projet de fin de bootcamp au Wagon en 2017. Il s'agit d'une plateforme permettant de trouver des lieux adaptés au télétravail dans une ville donnée. L'interface présente une carte sur laquelle on peut retrouver des cafés, coworking, bibliothèques et autres lieux permettant de travailler dans de bonnes conditions. Le code de cette version en Ruby est toujours disponible mais l'application n'est plus hébergée. Les images ci-dessous sont issues de maquettes utilisant le premier nom 'Work Oasis'. Une nouvelle version aux gouts du jour et scalable en React (NextJS) est en cours de développement.",
-    assembl: 'Assembl',
-    bluenove: 'Bluenove',
-    assemblDescription:
-      "Assembl est une plateforme d'intelligence collective permettant de mettre en discussion des milliers de participations afin de générer de nouvelles idées, voter pour les meilleures d'entre elles et produire un livrable final. J'ai eu l'occasion de développer de nombreuses features sur la V2 d'Assembl (legacy), principalement côté front-end (React) et dans une moindre mesure sur le backend et l'API GraphQL en Python.",
-    navigation: 'Navigation mobile dior.com',
-    checkout: 'Parcours de checkout dior.com',
-    exchangeAndReturns: "Parcours d'échange et de retours dior.com",
-    thisWebsite: 'Ce site',
-    thisWebsiteDescription:
-      "Ce site CV/portfolio a été réalisé à partir d'un template de base HTML/TailwindCSS converti en application NextJS/React sur laquelle j'ai itéré pour ajouter quelques features. Le site est entièrement responsive.",
-    navigationDescription:
-      "Conception d'une navigation animée pour la version mobile de dior.com afin de parcouris les différentes catégories des deux univers de la marque. Cette navigation s'ouvre automatiquement sur la catégorie que l'on est en train de visiter sur le site.",
-    portfolioIntro:
-      "Ce portfolio présente quelques uns de mes projets personnels ainsi que certains des projets que j'ai eu l'opportunité de réaliser à travers mes expériences professionnelles. Il est <b>en cours de construction</b>, d'autres projets seront ajoutés.",
-    mettaway: 'Mettaway',
-    mettawayDescription:
-      "Site vitrine minimaliste du festival de musique Mettaway. Une simple application NextJS pour un site statique avec quelques liens. L'aspect visuel est revu chaque année en fonction du thème de la prochaine édition.",
-    personalProject: 'Projet personnel',
-    leonTheSinger: 'leonthesinger.com',
-    hashverseStudio: 'hashverse.studio',
-    hashverseStudioDescription:
-      "Site officiel du Hashverse Studio, un studio de création de jeux Web 3. Le site présente l'équipe, ses projets, son équipe, son équipe professionnelle E-sports. Il permet aussi d'interragir avec des smart contracts Ethereum afin de créer son NFT de membre du Hashverse, univers créé par le studio."
-  },
-  EN: {
+  fr: frWording,
+  default: frWording,
+  en: {
     jobTitle: 'Front-end developer',
     status: 'Available',
     downloadCV: 'Download CV',

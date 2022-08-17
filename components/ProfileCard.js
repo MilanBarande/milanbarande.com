@@ -1,6 +1,9 @@
 import { SocialLinks, DownloadCvButton } from './index';
+import { useRouter } from 'next/router';
 
 export default function ProfileCard({ getWordingByKey }) {
+  const router = useRouter();
+  const { locale } = router;
   return (
     <div className="shadow rounded-xl overflow-hidden">
       <div className="h-32 bg-cover cover" />
@@ -15,7 +18,7 @@ export default function ProfileCard({ getWordingByKey }) {
         </div>
         <SocialLinks />
         <DownloadCvButton
-          language={getWordingByKey('language')}
+          locale={locale}
           ctaWording={getWordingByKey('downloadCV')}
         />
       </div>

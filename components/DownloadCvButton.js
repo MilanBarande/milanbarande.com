@@ -1,7 +1,7 @@
-export default function DownloadCvButton({ language, ctaWording }) {
+export default function DownloadCvButton({ locale, ctaWording }) {
   return (
     <a
-      href={`/CV Milan Barande ${language}.pdf`}
+      href={`/CV Milan Barande ${locale}.pdf`}
       alt="alt text"
       target="_blank"
       rel="noopener noreferrer"

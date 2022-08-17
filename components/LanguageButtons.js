@@ -1,10 +1,12 @@
 import useMobileDetect from 'use-mobile-detect-hook';
 import cn from 'classnames';
+import { useRouter } from 'next/router';
 
-export default function LanguageButtons({ language, setLanguage }) {
-  const isFrench = language === 'FR';
-  const isEnglish = language === 'EN';
+export default function LanguageButtons({ locale }) {
+  const isFrench = locale === 'fr' || locale === 'default';
+  const isEnglish = locale === 'en';
   const { isMobile } = useMobileDetect();
+  const router = useRouter();
 
   return (
     <div className="flex justify-between space-x-3 text-2xl fixed top-2.5 right-5">
@@ -13,7 +15,7 @@ export default function LanguageButtons({ language, setLanguage }) {
           ['opacity-40']: !isFrench,
           ['text-3xl']: isMobile()
         })}
-        onClick={() => setLanguage('FR')}
+        onClick={() => router.push('/', '/', { locale: 'fr' })}
       >
         🇫🇷
       </button>
@@ -22,7 +24,7 @@ export default function LanguageButtons({ language, setLanguage }) {
           ['opacity-40']: !isEnglish,
           ['text-3xl']: isMobile()
         })}
-        onClick={() => setLanguage('EN')}
+        onClick={() => router.push('/', '/', { locale: 'en' })}
       >
         🇬🇧
       </button>

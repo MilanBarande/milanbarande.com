@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import { useState, useEffect } from 'react';
-import wording from '../constants/wording';
 import { skillsData, languagesData } from '../constants/data';
 import {
   Informations,
@@ -9,22 +7,12 @@ import {
   ProfileCard,
   MainContent
 } from '../components';
+import wordingObject from '../constants/wording';
 
-export default function Home() {
-  const [language, setLanguage] = useState('FR');
+export default function Home({ wording, locale }) {
+  const getWordingByKey = key => wording[key];
 
-  useEffect(function getBrowserLanguage() {
-    const browserLanguage = window.navigator.language.split('-')[0];
-    if (browserLanguage === 'FR') {
-      return setLanguage('FR');
-    }
-    // fallback to english for any other browser language
-    setLanguage('EN');
-  }, []);
-
-  const getWordingByKey = wordingKey => wording[language][wordingKey];
-
-  const { skills, languages } = wording[language];
+  const { skills, languages } = wording;
 
   return (
     <>
@@ -47,8 +35,17 @@ export default function Home() {
           </div>
           <MainContent getWordingByKey={getWordingByKey} />
         </div>
-        <LanguageButtons language={language} setLanguage={setLanguage} />
+        <LanguageButtons locale={locale} />
       </main>
     </>
   );
 }
+
+export const getStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      wording: wordingObject[locale],
+      locale
+    }
+  };
+};
