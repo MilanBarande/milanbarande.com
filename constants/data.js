@@ -3,6 +3,15 @@ const paris = 'Paris, France';
 export const experiencesData = [
   {
     jobTitle: 'frontendDeveloper',
+    employer: 'Club Med',
+    location: paris,
+    dates: 'timeClubMed',
+    status: 'freelance',
+    time: 'fullTime',
+    logo: 'clubmed'
+  },
+  {
+    jobTitle: 'frontendDeveloper',
     employer: 'Parfums Christian Dior',
     location: paris,
     dates: 'timePcd',
