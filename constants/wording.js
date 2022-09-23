@@ -13,7 +13,7 @@ const frWording = {
   yes: 'Oui',
   aboutMe: 'À propos de moi',
   aboutMeText:
-    "Développeur front-end freelance avec bientôt 5 ans d'expérience, sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je recherche actuellement une mission front-end (ou full-stack JS) en télétravail. Je peux me déplacer temporairement sur Paris.<br>Je peux travailler en français, anglais ou allemand.",
+    "Développeur front-end freelance avec 5 ans d'expérience. Je suis sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je peux travailler en français, anglais ou allemand.",
   resume: 'CV',
   portfolio: 'Portfolio',
   experiences: 'Expériences',
@@ -104,7 +104,7 @@ export default {
     yes: 'Yes',
     aboutMe: 'About me',
     aboutMeText:
-      "I am a front-end developer with almost 5 years of experience. I care about UX, performances, code quality and accessibility. I enjoy teamwork and training junior developers. <br>I'm currently looking for a full-remote front-end (or full-stack JS) freelancing contract. I can temporarily come to your office in Paris or elsewhere in the EU.<br>I am capable of working in french, english or german.",
+      'I am a front-end developer with 5 years of experience. I care about UX, performances, code quality and accessibility. I enjoy teamwork and training junior developers.<br> I can work in french, english or german.',
     resume: 'CV',
     portfolio: 'Portfolio',
     experiences: 'Experiences',
