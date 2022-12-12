@@ -83,7 +83,8 @@ const frWording = {
   leonTheSinger: 'leonthesinger.com',
   hashverseStudio: 'hashverse.studio',
   hashverseStudioDescription:
-    "Site officiel du Hashverse Studio, un studio de création de jeux Web 3. Le site présente l'équipe, ses projets, son équipe, son équipe professionnelle E-sports. Il permet aussi d'interragir avec des smart contracts Ethereum afin de créer son NFT de membre du Hashverse, univers créé par le studio."
+    "Site officiel du Hashverse Studio, un studio de création de jeux Web 3. Le site présente l'équipe, ses projets, son équipe, son équipe professionnelle E-sports. Il permet aussi d'interragir avec des smart contracts Ethereum afin de créer son NFT de membre du Hashverse, univers créé par le studio.",
+  readMore: 'Voir Plus'
 };
 
 export default {
@@ -175,6 +176,7 @@ export default {
       "Minimalistic static website for the artist 'Leon the Singer' made with Gatsby. Design by the artist himself.",
     hashverseStudio: 'hashverse.studio',
     hashverseStudioDescription:
-      'Official website of the Hashverse studio, a web3 videogames studio. The website presents the team, its projects and its professionnal E-sports team. It also lets you mint your own Hashverse member card NFT by interacting with Ethereum smart contracts.'
+      'Official website of the Hashverse studio, a web3 videogames studio. The website presents the team, its projects and its professionnal E-sports team. It also lets you mint your own Hashverse member card NFT by interacting with Ethereum smart contracts.',
+    readMore: 'Read More'
   }
 };

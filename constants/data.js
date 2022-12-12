@@ -126,7 +126,8 @@ export const portfolioData = [
     youtubeId: '_hg3WvRdmUU',
     imageSrc: '/assembl.webp',
     alt: 'Assembl illustration',
-    link: 'https://bluenove.com/offres/assembl/'
+    link: 'https://bluenove.com/offres/assembl/',
+    cta: 'readMore'
   },
   {
     id: 'ticketswoop',
@@ -138,7 +139,8 @@ export const portfolioData = [
     github: 'https://github.com/MilanBarande/ticketswoop',
     youtubeId: '-W2q28VXvxg',
     imageSrc: '/ticketswoop.webp',
-    alt: 'Ticketswoop illustration'
+    alt: 'Ticketswoop illustration',
+    cta: 'readMore'
   },
   {
     id: 'thisWebsite',
@@ -149,7 +151,8 @@ export const portfolioData = [
     stack: ['NextJS', 'React', 'TailwindCSS', 'Vercel'],
     github: 'https://github.com/MilanBarande/milanbarande.com',
     imageSrc: '/thisWebsite.webp',
-    link: 'https://www.milanbarande.com'
+    link: 'https://www.milanbarande.com',
+    cta: 'readMore'
   },
   {
     id: 'mettaway',
@@ -161,7 +164,8 @@ export const portfolioData = [
     imageSrc: '/mettaway.webp',
     images: [{ src: '/mettaway.webp', alt: 'Mettaway illustration' }],
     link: 'https://www.mettaway.voyage',
-    github: 'https://github.com/MilanBarande/mettaway'
+    github: 'https://github.com/MilanBarande/mettaway',
+    cta: 'readMore'
   },
   {
     id: 'hashverse',
@@ -181,7 +185,8 @@ export const portfolioData = [
     ],
     imageSrc: '/hashverse.webp',
     link: 'https://www.hashverse.studio',
-    youtubeId: 'AWnZIpNYIgM'
+    youtubeId: 'AWnZIpNYIgM',
+    cta: 'readMore'
   },
   {
     id: 'wasis-rb',
@@ -199,7 +204,8 @@ export const portfolioData = [
     github: 'https://github.com/MilanBarande/wasis-legacy',
     imageSrc: '/wasis-rb.jpg',
     images: ['/oasis1.webp', '/oasis2.webp', '/oasis3.webp'],
-    alt: 'Wasis RB illustration'
+    alt: 'Wasis RB illustration',
+    cta: 'readMore'
   },
   // {
   //   id: 'leon-the-singer',
@@ -222,7 +228,8 @@ export const portfolioData = [
     youtubeId: 'riaOWSRuUDs',
     stack: ['React', 'SCSS', 'NextJS', 'TypeScript', 'Jest', 'Storybook'],
     imageSrc: '/navigation.webp',
-    link: 'https://www.dior.com'
+    link: 'https://www.dior.com',
+    cta: 'readMore'
   },
   // {
   //   id: 'lineSso',
@@ -279,6 +286,7 @@ export const portfolioData = [
     youtubeId: 'qUaZVBvgSpc',
     imageSrc: '/perso.webp',
     alt: 'Perfume personalization illustration',
-    link: 'https://www.dior.com'
+    link: 'https://www.dior.com',
+    cta: 'readMore'
   }
 ];
