@@ -2,10 +2,19 @@ const paris = 'Paris, France';
 
 export const experiencesData = [
   {
+    jobTitle: 'mobileDeveloper',
+    employer: 'Club Med',
+    location: paris,
+    dates: 'timeClubMed2',
+    status: 'freelance',
+    time: 'fullTime',
+    logo: 'clubmed'
+  },
+  {
     jobTitle: 'frontendDeveloper',
     employer: 'Club Med',
     location: paris,
-    dates: 'timeClubMed',
+    dates: 'timeClubMed1',
     status: 'freelance',
     time: 'fullTime',
     logo: 'clubmed'
