@@ -1,4 +1,8 @@
+import getYearsOfExperience from '../helpers/getYearsOfExperience';
+
 export default function Informations({ getWordingByKey }) {
+  const years = getWordingByKey('yearsWord');
+  const yearsOfExperience = `${getYearsOfExperience()} ${years}`;
   return (
     <div className="p-7 block-section">
       <h2 className="block-title">{getWordingByKey('informations')}</h2>
@@ -12,7 +16,7 @@ export default function Informations({ getWordingByKey }) {
         <div className="flex justify-between">
           <div className="text-gray-400">{getWordingByKey('experience')}</div>
           <div className="font-medium text-right text-gray-600">
-            {getWordingByKey('years')}
+            {yearsOfExperience}
           </div>
         </div>
         {/* <div className="flex justify-between">
