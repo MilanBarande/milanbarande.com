@@ -14,7 +14,7 @@ const frWording = {
   yes: 'Oui',
   aboutMe: 'À propos de moi',
   aboutMeText:
-    "Développeur front-end et mobile freelance avec 5 ans d'expérience. Je suis sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je peux travailler en français, anglais ou allemand.",
+    "Développeur front-end et mobile freelance avec plus de 6 ans d'expérience. Je suis sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je peux travailler en français, anglais ou allemand.",
   resume: 'CV',
   portfolio: 'Portfolio',
   experiences: 'Expériences',
@@ -31,8 +31,6 @@ const frWording = {
   timeCdcFree: 'Août 2020 - Janv. 2021',
   timeCdcCdi: 'Avril 2019 - Août 2020',
   cdi: 'CDI',
-  descriptionPcd:
-    'Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus.Aut quasi sunt dolor.Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem.Enim quo sed et sint aspernatur distinctio qui quam.',
   descriptionCdcCdi:
     "Développement du front-end et de l'API GraphQL de dior.com, une application isomorphique entièrement écrite en programmation fonctionnelle avec React, NextJS, TypeScript, Redux, Apollo GraphQL, recompose, rx-js...",
   timeWagon: 'Déc. 2017 - Nov. 2019',
@@ -126,8 +124,6 @@ export default {
     timeCdcFree: 'August 2020 - Jan. 2021',
     timeCdcCdi: 'April 2019 - August 2020',
     cdi: 'Permanent Contract',
-    descriptionPcd:
-      'Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus.Aut quasi sunt dolor.Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem.Enim quo sed et sint aspernatur distinctio qui quam.',
     descriptionCdcCdi:
       'Working on the front-end and GraphQL API of dior.com, an isomorphic app entirely written in functional programming and built with React, NextJS, TypeScript, Redux, ApolloGraphQL, recompose, rx-js...',
     timeWagon: 'Dec. 2017 - Nov. 2019',

@@ -104,11 +104,11 @@ export const studiesData = [
 
 export const skillsData = [
   'JavaScript',
+  'TypeScript',
   'HTML5',
   'CSS3',
   'React',
   'NextJS',
-  'TypeScript',
   'GraphQL',
   'NodeJS',
   'React Native',
@@ -121,7 +121,9 @@ export const skillsData = [
   'CircleCI',
   'TailwindCSS',
   'Jest',
-  'Puppeteer'
+  'Puppeteer',
+  'DevOps',
+  'Bash'
 ];
 
 export const languagesData = ['french', 'english', 'german', 'portuguese'];
