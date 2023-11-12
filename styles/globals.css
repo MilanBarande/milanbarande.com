@@ -1266,3 +1266,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .udem-logo {
   background-image: url('/bu-logo.jpg');
 }
+
+.description > a {
+  text-decoration: underline;
+}
+
+.description > a:hover {
+  text-decoration: none;
+}

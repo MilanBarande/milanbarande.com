@@ -10,10 +10,10 @@ const Experience = ({
   description,
   logo
 }) => (
-  <div className="item-section mb-5">
+  <div className="mb-5 item-section">
     <Image
       src={`/${logo}.jpeg`}
-      className="company-logo rounded-md"
+      className="rounded-md company-logo"
       width={48}
       height={48}
     />
@@ -26,7 +26,7 @@ const Experience = ({
             <div className="item-header-info">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
+                className="w-4 h-4"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -43,7 +43,7 @@ const Experience = ({
             <div className="item-header-info">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
+                className="w-4 h-4"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -67,13 +67,13 @@ const Experience = ({
         </div>
         <div className="space-y-2 sm:text-right">
           <div>
-            <div className="job-item-badge mr-2">{status}</div>
+            <div className="mr-2 job-item-badge">{status}</div>
             {time && <div className="job-item-badge">{time}</div>}
           </div>
-          <div className="item-header-info flex justify-start sm:justify-end">
+          <div className="flex justify-start item-header-info sm:justify-end">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
+              className="w-4 h-4"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -91,7 +91,7 @@ const Experience = ({
       </div>
       {description && (
         <p
-          className="text-gray-600 text-justify"
+          className="text-justify text-gray-600 description"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       )}

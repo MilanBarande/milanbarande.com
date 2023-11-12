@@ -8,7 +8,8 @@ export const experiencesData = [
     dates: 'timeClubMed2',
     status: 'freelance',
     time: 'fullTime',
-    logo: 'clubmed'
+    logo: 'clubmed',
+    description: 'descriptionCmMobile'
   },
   {
     jobTitle: 'frontendDeveloper',
@@ -17,7 +18,8 @@ export const experiencesData = [
     dates: 'timeClubMed1',
     status: 'freelance',
     time: 'fullTime',
-    logo: 'clubmed'
+    logo: 'clubmed',
+    description: 'descriptionCmWeb'
   },
   {
     jobTitle: 'frontendDeveloper',
