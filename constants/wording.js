@@ -14,7 +14,7 @@ const frWording = {
   yes: 'Oui',
   aboutMe: 'À propos de moi',
   aboutMeText:
-    "Développeur front-end et mobile freelance avec plus de 6 ans d'expérience. Je suis sensible aux questions d'UX, de performance, de qualité de code et d'accessibilité. J'apprécie le travail en équipe et la formation de développeurs junior. <br>Je peux travailler en français, anglais ou allemand.",
+    "Développeur front-end et mobile avec plus de 6 ans d'expérience. J'aime travailler également côté backend et sur l'implantation de pratiques DevOps.<br> Je suis sensible aux questions d'UX, de performance, de sécurité et d'accessibilité. J'aime la programmation fonctionnelle, produire du code simple, robuste et testé. <br>Je peux travailler en français, anglais ou allemand.",
   resume: 'CV',
   portfolio: 'Portfolio',
   experiences: 'Expériences',
@@ -107,7 +107,7 @@ export default {
     yes: 'Yes',
     aboutMe: 'About me',
     aboutMeText:
-      'I am a front-end and mobile developer with 5 years of experience. I care about UX, performances, code quality and accessibility. I enjoy teamwork and training junior developers.<br> I can work in french, english or german.',
+      'I am a web and mobile front-end developer with over 6 years of experience. I also enjoy working on the backend and on the implementation of DevOps practices. <br>I care about good UX, performances, security and accessibility. I like functional programming and producing simple, robust, and well tested code. I\'m always eager to learn new technologies and expand my knowledge on all things tech.<br>I can work in french, english or german, and I am currently learning dutch',
     resume: 'CV',
     portfolio: 'Portfolio',
     experiences: 'Experiences',
