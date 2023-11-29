@@ -25,14 +25,14 @@ const frWording = {
   workshopLead: 'Workshop Lead',
   pcd: 'Parfums Christian Dior',
   cdc: 'Christian Dior Couture',
-  timeClubMed1: "Sep. 2022 - Jan. 2023",
+  timeClubMed1: 'Sep. 2022 - Jan. 2023',
   timeClubMed2: "Jan. 2023 - <b>Aujourd'hui</b>",
   timePcd: 'Janv. 2021 - Juillet 2022',
   timeCdcFree: 'Août 2020 - Janv. 2021',
   timeCdcCdi: 'Avril 2019 - Août 2020',
   cdi: 'CDI',
   descriptionCdcCdi:
-    "Développement du front-end et de l'API GraphQL de <a href=\'https://www.dior.com\' target=\'_blank\'>dior.com</a>, une application isomorphique entièrement écrite en programmation fonctionnelle avec React, NextJS, TypeScript, Redux, Apollo GraphQL, recompose, rx-js...",
+    "Développement du front-end et de l'API GraphQL de <a href='https://www.dior.com' target='_blank'>dior.com</a>, une application isomorphique entièrement écrite en programmation fonctionnelle avec React, NextJS, TypeScript, Redux, Apollo GraphQL, recompose, rx-js...",
   timeWagon: 'Déc. 2017 - Nov. 2019',
   descriptionWagon:
     "Animation ponctuelle de workshops de code tels que : <br>- Création d'une landing page en HTML/CSS<br>- Introduction à JavaScript <br>- Introduction à React",
@@ -86,8 +86,15 @@ const frWording = {
   hashverseStudioDescription:
     "Site officiel du Hashverse Studio, un studio de création de jeux Web 3. Le site présente l'équipe, ses projets, son équipe, son équipe professionnelle E-sports. Il permet aussi d'interragir avec des smart contracts Ethereum afin de créer son NFT de membre du Hashverse, univers créé par le studio.",
   readMore: 'Voir Plus',
-  descriptionCmWeb: 'Développement du front-end du compte client de <a href=\'https://www.clubmed.com\' target=\'_blank\'>clubmed.com</a> et de l\'API GraphQL.',
-    descriptionCmMobile: 'Développement de <a href=\'https://apps.apple.com/fr/app/my-club-med/id1666945596\' target=\'_blank\'>My Club Med</a>, une application React Native, son API GraphQL et sur la pipeline de CI/CD (CircleCI). <br>My Club Med vise à offrir la meilleure expérience aux clients Club Med pendant leur séjour.'
+  descriptionCmWeb:
+    "Développement du front-end du compte client de <a href='https://www.clubmed.com' target='_blank'>clubmed.com</a> et de l'API GraphQL.",
+  descriptionCmMobile:
+    "Développement de <a href='https://apps.apple.com/fr/app/my-club-med/id1666945596' target='_blank'>My Club Med</a>, une application React Native, son API GraphQL et sur la pipeline de CI/CD (CircleCI). <br>My Club Med vise à offrir la meilleure expérience aux clients Club Med pendant leur séjour.",
+  clubmedWeb: 'Clubmed.com',
+  clubmed: 'Club Med',
+  myClubMed: 'My Club Med',
+  myClubMedDescription: '',
+  clubMedWebDescription: ''
 };
 
 export default {
@@ -109,7 +116,7 @@ export default {
     yes: 'Yes',
     aboutMe: 'About me',
     aboutMeText:
-      'I am a web and mobile front-end developer with over 6 years of experience. I also enjoy working on the back-end and on the implementation of DevOps practices. <br>I care about good UX, performances, security and accessibility. I like functional programming and producing simple, robust, and well tested code. I\'m always eager to learn new technologies and expand my knowledge on all things tech.<br>I can work in french, english or german, and I am currently learning dutch. I am currently looking for a permanent role in Amsterdam. <br>Feel free to contact me if you wish to know more or discuss an opportunity.',
+      "I am a web and mobile front-end developer with over 6 years of experience. I also enjoy working on the back-end and on the implementation of DevOps practices. <br>I care about good UX, performances, security and accessibility. I like functional programming and producing simple, robust, and well tested code. I'm always eager to learn new technologies and expand my knowledge on all things tech.<br>I can work in french, english or german, and I am currently learning dutch. I am currently looking for a permanent role in the Netherlands. <br>Feel free to contact me if you wish to know more or discuss an opportunity.",
     resume: 'CV',
     portfolio: 'Portfolio',
     experiences: 'Experiences',
@@ -127,7 +134,7 @@ export default {
     timeCdcCdi: 'April 2019 - August 2020',
     cdi: 'Permanent Contract',
     descriptionCdcCdi:
-      'In this experience and the following ones at Dior, I worked on the front-end and GraphQL API of <a href=\'https://www.dior.com\' target=\'_blank\'>dior.com</a>, an isomorphic app entirely written in functional programming and built with React, NextJS, TypeScript, Redux, GraphQL, recompose, rx-js...',
+      "In this experience and the following ones at Dior, I worked on the front-end and GraphQL API of <a href='https://www.dior.com' target='_blank'>dior.com</a>, an isomorphic app entirely written in functional programming and built with React, NextJS, TypeScript, Redux, GraphQL, recompose, rx-js...",
     timeWagon: 'Dec. 2017 - Nov. 2019',
     descriptionWagon:
       'Occasionaly leading coding workshops at Le Wagon such as: <br>- Creating a landing page with HTML and CSS<br>- Introduction to JavaScript <br>- Introduction to React',
@@ -182,7 +189,16 @@ export default {
     hashverseStudioDescription:
       'Official website of the Hashverse studio, a web3 videogames studio. The website presents the team, its projects and its professionnal E-sports team. It also lets you mint your own Hashverse member card NFT by interacting with Ethereum smart contracts.',
     readMore: 'Read More',
-    descriptionCmWeb: 'Working on the user account section of <a href=\'https://www.clubmed.com\' target=\'_blank\'>clubmed.com</a> and its GraphQL API.',
-    descriptionCmMobile: 'Working on <a href=\'https://apps.apple.com/us/app/my-club-med/id1666945596\' target=\'_blank\'>My Club Med</a>, a React Native app, its GraphQL API, and the CI/CD pipeline (CircleCI). <br>My Club Med aims at offering the best experience to the Club Med clients during their stay in one of the resorts.'
+    descriptionCmWeb:
+      "Working on the user account section of <a href='https://www.clubmed.com' target='_blank'>clubmed.com</a> and its GraphQL API.",
+    descriptionCmMobile:
+      "Developing <a href='https://apps.apple.com/us/app/my-club-med/id1666945596' target='_blank'>My Club Med</a>, a React Native app, its GraphQL API, and the CI/CD pipeline (CircleCI). <br>My Club Med aims at offering the best experience to the Club Med clients during their stay in one of the resorts.",
+    clubmedWeb: 'Clubmed.com',
+    clubmed: 'Club Med',
+    myClubMed: 'My Club Med',
+    myClubMedDescription:
+      'Contributed to the remake of the “My Club Med” app with a new design and refreshed features for better user experience, leading to an increase in the rating from 2.5 to 4 stars on the App Store in France (our main market). Enhanced our test and typing coverage, and refactored several parts of the application to improve maintainability and ensure more robust code. Automated the release process and the generation of changelogs, and worked on the CI/CD pipeline. Worked on the update of all major dependencies of the project such as Expo and React-Native',
+    clubMedWebDescription:
+      'I led the My Account squad on clubmed.com. I stabilized the web app by resolving dozens of bugs in various features, such as the purchase of additional booking options and the review of services offered at booked resorts. I developed a tailored version of clubmed.com for specific locales, excluding e-commerce features and focusing solely on enabling users to access their booking information.Cleaned up the typing (Flow) and refactored the codebase for enhanced efficiency and readability.'
   }
 };

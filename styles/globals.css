@@ -1274,3 +1274,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .description > a:hover {
   text-decoration: none;
 }
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resizes the image to cover the container */
+}

@@ -132,6 +132,47 @@ export const languagesData = ['french', 'english', 'german', 'portuguese'];
 
 export const portfolioData = [
   {
+    id: 'myClubMed',
+    year: '2022',
+    title: 'myClubMed',
+    subtitle: 'clubmed',
+    description: 'myClubMedDescription',
+    stack: [
+      'React Native',
+      'Expo',
+      'mobx-state-tree',
+      'TypeScript',
+      'GraphQL',
+      'NodeJS',
+      'CircleCI',
+      'Jest'
+    ],
+    imageSrc: '/myclubmedapp.webp',
+    alt: 'ClubMed.com illustration',
+    link: 'https://apps.apple.com/fr/app/my-club-med/id1666945596',
+    cta: 'readMore'
+  },
+  {
+    id: 'clubmedWeb',
+    year: '2022',
+    title: 'clubmedWeb',
+    subtitle: 'clubmed',
+    description: 'clubMedWebDescription',
+    stack: [
+      'React',
+      'Redux',
+      'Tailwind',
+      'NextJS',
+      'Flow',
+      'GraphQL',
+      'NodeJS'
+    ],
+    imageSrc: '/clubmedweb.webp',
+    alt: 'ClubMed.com illustration',
+    link: 'https://www.clubmed.com',
+    cta: 'readMore'
+  },
+  {
     id: 'assembl',
     year: '2017-2019',
     title: 'assembl',
