@@ -10,7 +10,7 @@ export default function Informations({ getWordingByKey }) {
         <div className="flex justify-between">
           <div className="text-gray-400">{getWordingByKey('location')}</div>
           <div className="font-medium text-right text-gray-600">
-            Paris, France
+            {getWordingByKey('amsterdam')}
           </div>
         </div>
         <div className="flex justify-between">

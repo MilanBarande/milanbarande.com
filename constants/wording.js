@@ -1,4 +1,5 @@
 const frWording = {
+  amsterdam: 'Amsterdam, Pays-Bas',
   jobTitle: 'Développeur front-end',
   status: 'Disponible',
   downloadCV: 'Télécharger CV',
@@ -6,7 +7,7 @@ const frWording = {
   skills: 'Compétences',
   location: 'Localisation',
   experience: 'Expériences',
-  years: '5 ans',
+  years: '6 ans',
   yearsWord: 'ans',
   availability: 'Disponible au',
   availabilityTime: '15 Juillet',
@@ -101,6 +102,7 @@ export default {
   fr: frWording,
   default: frWording,
   en: {
+    amsterdam: 'Amsterdam, Netherlands',
     jobTitle: 'Front-end developer',
     status: 'Available',
     downloadCV: 'Download CV',
@@ -108,7 +110,7 @@ export default {
     skills: 'Skills',
     location: 'Location',
     experience: 'Experience',
-    years: '5 years',
+    years: '6 years',
     yearsWord: 'years',
     availability: 'Availability',
     availabilityTime: 'July 15th',
@@ -116,7 +118,7 @@ export default {
     yes: 'Yes',
     aboutMe: 'About me',
     aboutMeText:
-      "I am a web and mobile front-end developer with over 6 years of experience. I also enjoy working on the back-end and on the implementation of DevOps practices. <br>I care about good UX, performances, security and accessibility. I like functional programming and producing simple, robust, and well tested code. I'm always eager to learn new technologies and expand my knowledge on all things tech.<br>I can work in french, english or german, and I am currently learning dutch. I am currently looking for a permanent role in the Netherlands. <br>Feel free to contact me if you wish to know more or discuss an opportunity.",
+      "I am a web and mobile front-end developer with over 6 years of experience. I also enjoy working on the back-end and on the implementation of DevOps practices. <br>I care about good UX, performances, security and accessibility. I like functional programming and producing simple, robust, and well tested code. I'm always eager to learn new technologies and expand my knowledge on all things tech.<br>I can work in french, english or german, and I am learning dutch.<br><strong> I am interested in freelance or permanent positions in the Netherlands.</strong> <br>Feel free to contact me if you wish to know more or discuss an opportunity.",
     resume: 'CV',
     portfolio: 'Portfolio',
     experiences: 'Experiences',

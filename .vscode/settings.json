@@ -2,12 +2,10 @@
   "editor.tabSize": 2,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   // Code actions on save
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
+    "source.fixAll.eslint": "explicit"
   },
   "[js]": {
     "editor.formatOnSave": true
@@ -22,10 +20,7 @@
   "eslint.packageManager": "yarn",
   // stylelint config
   "stylelint.packageManager": "yarn",
-  "stylelint.validate": [
-    "css",
-    "scss"
-  ],
+  "stylelint.validate": ["css", "scss"],
   // Typescript
   "typescript.tsdk": "node_modules/typescript/lib",
   "workbench.colorCustomizations": {
