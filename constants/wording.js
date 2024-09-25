@@ -13,6 +13,7 @@ const frWording = {
   availabilityTime: '15 Juillet',
   openToFullRemote: 'Ouvert au 100% télétravail',
   yes: 'Oui',
+  no: 'Non',
   aboutMe: 'À propos de moi',
   aboutMeText:
     "Développeur front-end et mobile avec plus de 6 ans d'expérience. J'aime travailler également côté back-end et sur l'implantation de pratiques DevOps.<br> Je suis sensible aux questions d'UX, de performance, de sécurité et d'accessibilité. J'aime la programmation fonctionnelle et produire du code simple, robuste et testé. <br>Je peux travailler en français, anglais ou allemand.",
@@ -21,6 +22,7 @@ const frWording = {
   experiences: 'Expériences',
   mobileDeveloper: 'Développeur mobile',
   frontendDeveloper: 'Développeur front-end',
+  leadFrontendDeveloper: 'Lead Développeur front-end',
   fullTime: 'Temps plein',
   freelance: 'Freelance',
   workshopLead: 'Workshop Lead',
@@ -103,7 +105,7 @@ export default {
   default: frWording,
   en: {
     amsterdam: 'Amsterdam, Netherlands',
-    jobTitle: 'Front-end developer',
+    jobTitle: 'Senior Front-end Developer',
     status: 'Available',
     downloadCV: 'Download CV',
     informations: 'Information',
@@ -116,6 +118,7 @@ export default {
     availabilityTime: 'July 15th',
     openToFullRemote: 'Open to full remote',
     yes: 'Yes',
+    no: 'No',
     aboutMe: 'About me',
     aboutMeText:
       "I am a web and mobile front-end developer with over 6 years of experience. I also enjoy working on the back-end and on the implementation of DevOps practices. <br>I care about good UX, performances, security and accessibility. I like functional programming and producing simple, robust, and well tested code. I'm always eager to learn new technologies and expand my knowledge on all things tech.<br>I can work in french, english or german, and I am learning dutch.<br><strong> I am interested in freelance or permanent positions in the Netherlands.</strong> <br>Feel free to contact me if you wish to know more or discuss an opportunity.",
@@ -123,6 +126,7 @@ export default {
     portfolio: 'Portfolio',
     experiences: 'Experiences',
     frontendDeveloper: 'Front-end Developer',
+    leadFrontendDeveloper: 'Lead Front-end Developer',
     mobileDeveloper: 'Mobile Developer',
     fullTime: 'Full Time',
     freelance: 'Freelance',

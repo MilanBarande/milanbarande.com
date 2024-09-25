@@ -30,7 +30,7 @@ export default function Informations({ getWordingByKey }) {
             {getWordingByKey('openToFullRemote')}
           </div>
           <div className="font-medium text-right text-gray-600">
-            {getWordingByKey('yes')}
+            {getWordingByKey('no')}
           </div>
         </div>
         <div className="flex justify-between">

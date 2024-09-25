@@ -12,7 +12,7 @@ export const experiencesData = [
     description: 'descriptionCmMobile'
   },
   {
-    jobTitle: 'frontendDeveloper',
+    jobTitle: 'leadFrontendDeveloper',
     employer: 'Club Med',
     location: paris,
     dates: 'timeClubMed1',
@@ -117,6 +117,7 @@ export const skillsData = [
   'Expo',
   'Redux',
   'mobx-state-tree',
+  'zustand',
   'Git',
   'ExpressJS',
   'Python',
@@ -124,6 +125,7 @@ export const skillsData = [
   'TailwindCSS',
   'Jest',
   'Puppeteer',
+  'react-testing-library',
   'DevOps',
   'Bash'
 ];
@@ -145,7 +147,8 @@ export const portfolioData = [
       'GraphQL',
       'NodeJS',
       'CircleCI',
-      'Jest'
+      'Jest',
+      'react-testing-library'
     ],
     imageSrc: '/myclubmedapp.webp',
     alt: 'ClubMed.com illustration',
@@ -165,7 +168,8 @@ export const portfolioData = [
       'NextJS',
       'Flow',
       'GraphQL',
-      'NodeJS'
+      'NodeJS',
+      'react-testing-library'
     ],
     imageSrc: '/clubmedweb.webp',
     alt: 'ClubMed.com illustration',
