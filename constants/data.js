@@ -133,7 +133,7 @@ export const languagesData = ['french', 'english', 'german', 'portuguese'];
 export const portfolioData = [
   {
     id: 'myClubMed',
-    year: '2022',
+    year: '2024',
     title: 'myClubMed',
     subtitle: 'clubmed',
     description: 'myClubMedDescription',
